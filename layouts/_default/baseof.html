@@ -343,12 +343,45 @@
       margin: 0.8rem auto;
     }
 
-    /* ── RTL ── */
-    [dir="rtl"] header nav a { margin-left: 0; margin-right: 2rem; }
-    [dir="rtl"] blockquote { border-left: none; border-right: 3px solid var(--sand); }
+    /* ── RTL (Arabic) ── */
+    [dir="rtl"] { direction: rtl; text-align: right; }
+    [dir="rtl"] body { font-family: 'Segoe UI', 'SF Pro Arabic', -apple-system, 'Noto Sans Arabic', sans-serif; }
+    [dir="rtl"] header { flex-direction: row-reverse; }
+    [dir="rtl"] header nav { flex-direction: row-reverse; }
+    [dir="rtl"] header nav a { margin-left: 0; margin-right: 0; }
+    [dir="rtl"] blockquote { border-left: none; border-right: 3px solid var(--sand); padding-left: 0; padding-right: 1.2rem; }
     [dir="rtl"] ul, [dir="rtl"] ol { padding-left: 0; padding-right: 1.5rem; }
-    [dir="rtl"] .hero-overlay { justify-content: flex-end; }
+    [dir="rtl"] .hero-overlay {
+      justify-content: flex-start;
+      background: linear-gradient(to left, rgba(58,48,40,0.78) 0%, rgba(58,48,40,0.4) 45%, transparent 75%);
+    }
     [dir="rtl"] .hero-text { text-align: right; }
+    [dir="rtl"] .value-card, [dir="rtl"] .product-name { text-align: center; }
+    [dir="rtl"] .content { text-align: right; }
+    [dir="rtl"] .blog-list .meta { text-align: right; }
+    [dir="rtl"] .about-banner { text-align: center; }
+    /* RTL: flip all hero overlays that use left-to-right gradient */
+    [dir="rtl"] .collab-hero-overlay,
+    [dir="rtl"] .blog-hero-overlay,
+    [dir="rtl"] .ip-hero-overlay {
+      background: linear-gradient(to left, rgba(58,48,40,0.78) 0%, rgba(58,48,40,0.4) 45%, transparent 75%) !important;
+      justify-content: flex-end !important;
+    }
+    [dir="rtl"] .custom-hero-overlay {
+      background: linear-gradient(to right, rgba(42,36,32,0.78) 0%, rgba(42,36,32,0.4) 45%, transparent 75%) !important;
+      justify-content: flex-start !important;
+    }
+    [dir="rtl"] .collab-hero-text,
+    [dir="rtl"] .blog-hero-text,
+    [dir="rtl"] .ip-hero-text,
+    [dir="rtl"] .custom-hero-text,
+    [dir="rtl"] .products-hero-text { text-align: right; }
+    /* RTL: flip grids and cards */
+    [dir="rtl"] .char-grid, [dir="rtl"] .merch-showcase,
+    [dir="rtl"] .use-cases, [dir="rtl"] .process-flow { direction: rtl; }
+    [dir="rtl"] .case-intro { direction: rtl; }
+    [dir="rtl"] .case-intro-text { text-align: right; }
+    [dir="rtl"] .spec-table th, [dir="rtl"] .spec-table td { text-align: right; }
 
     /* ── Responsive: Tablet ── */
     @media (max-width: 900px) {
@@ -416,6 +449,12 @@
 
       /* Footer */
       footer { padding: 2rem 1rem; margin-top: 2rem; }
+
+      /* Mobile RTL overrides */
+      [dir="rtl"] header { flex-direction: row-reverse; }
+      [dir="rtl"] header nav { text-align: right; }
+      [dir="rtl"] header nav a { text-align: right; }
+      [dir="rtl"] .hero-text { text-align: right; }
     }
 
     /* ── Responsive: Small phone ── */
