@@ -42,7 +42,7 @@ Your company logo, your brand colors, your story — rendered as a collectible f
 
 Ramadan, Eid Al Fitr, National Day, and New Year — each season calls for themed packaging and culturally appropriate designs.
 
-![Daixiaodai Product](/images/products/daixiaodai-big/1.png)
+![Daimio Product](/images/products/daixiaodai-big/1.png)
 
 ## How to Order
 
