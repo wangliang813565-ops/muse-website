@@ -1,0 +1,241 @@
+{{ define "main" }}
+
+<style>
+  .collab-hero {
+    background: var(--taupe);
+    color: var(--pearl);
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  .collab-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2.6rem;
+    color: var(--sand);
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+  }
+  .collab-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--blush);
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  /* Process */
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+  }
+  .process-step {
+    text-align: center;
+    padding: 2rem 1.2rem;
+    position: relative;
+  }
+  .step-num {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 50%;
+    background: var(--sand);
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .process-step h3 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--taupe);
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.5px;
+  }
+  .process-step p {
+    font-size: 0.88rem;
+    color: var(--greige);
+    line-height: 1.6;
+  }
+
+  /* Collab models */
+  .collab-models {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+  }
+  .collab-model-card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 2.5rem 1.8rem;
+    text-align: center;
+    border: 1px solid var(--cream-dark);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .collab-model-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(58,48,40,0.08);
+  }
+  .collab-model-card .icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  .collab-model-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--taupe);
+    margin-bottom: 0.8rem;
+  }
+  .collab-model-card p {
+    font-size: 0.88rem;
+    color: var(--greige);
+    line-height: 1.6;
+  }
+
+  /* Showcase */
+  .showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+  }
+  .showcase-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  .showcase-card:hover { transform: translateY(-3px); }
+  .showcase-card img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+  }
+  .showcase-card .label {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+    color: var(--greige);
+    text-align: center;
+  }
+
+  @media (max-width: 900px) {
+    .process-steps { grid-template-columns: repeat(2, 1fr); }
+    .collab-models { grid-template-columns: 1fr; }
+    .showcase-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .collab-hero h1 { font-size: 2rem; }
+  }
+</style>
+
+<!-- Hero -->
+<div class="collab-hero">
+  <h1>IP Collaboration</h1>
+  <p>Partner with MUSE to bring your brand into the world of designer toys. From themed character crossovers to co-branded collections, we create collectibles that resonate with the Gulf market.</p>
+</div>
+
+<!-- Collaboration Models -->
+<h2 class="section-title">Collaboration Models</h2>
+<div class="section-line"></div>
+<div class="collab-models">
+  <div class="collab-model-card">
+    <span class="icon">&#9830;</span>
+    <h3>Character Crossover</h3>
+    <p>Your brand identity meets our original IP. We redesign Hala or other characters in your brand's theme — from chocolate houses to fashion labels.</p>
+  </div>
+  <div class="collab-model-card">
+    <span class="icon">&#9733;</span>
+    <h3>Co-Branded Collection</h3>
+    <p>A full product line — blind boxes, plush, keychains — carrying both brands. Joint marketing, shared audience, dual distribution.</p>
+  </div>
+  <div class="collab-model-card">
+    <span class="icon">&#9998;</span>
+    <h3>Custom IP Development</h3>
+    <p>We design an entirely new character from your brief. Full ownership transfer available. From sketch to 3D to mass production.</p>
+  </div>
+</div>
+
+<!-- Case Study: Chocolate Collab -->
+<h2 class="section-title">Case Study: Chocolate Collection</h2>
+<div class="section-line"></div>
+<div style="max-width: 720px; margin: 0 auto 2rem; padding: 0 2rem; text-align: center;">
+  <p style="color: var(--greige); line-height: 1.8;">Hala reimagined as a cast of chocolate artisans — from Cacao Priest to Pastry Queen. Each character tells a story at the intersection of Gulf heritage and global confectionery craft.</p>
+</div>
+<div class="showcase-grid">
+  <div class="showcase-card">
+    <img src="{{ "images/hala/collab/hala-chocolatier-concept.png" | relURL }}" alt="Hala — Chocolatier" loading="lazy">
+    <div class="label">The Chocolatier</div>
+  </div>
+  <div class="showcase-card">
+    <img src="{{ "images/hala/collab/hala-cacao-priest.png" | relURL }}" alt="Hala — Cacao Priest" loading="lazy">
+    <div class="label">Cacao Priest</div>
+  </div>
+  <div class="showcase-card">
+    <img src="{{ "images/hala/collab/hala-pastry-queen.png" | relURL }}" alt="Hala — Pastry Queen" loading="lazy">
+    <div class="label">Pastry Queen</div>
+  </div>
+  <div class="showcase-card">
+    <img src="{{ "images/hala/collab/hala-connoisseur-v2.png" | relURL }}" alt="Hala — Connoisseur" loading="lazy">
+    <div class="label">The Connoisseur</div>
+  </div>
+  <div class="showcase-card">
+    <img src="{{ "images/hala/collab/hala-grandmaster-v2.png" | relURL }}" alt="Hala — Grand Master" loading="lazy">
+    <div class="label">Grand Master</div>
+  </div>
+  <div class="showcase-card">
+    <img src="{{ "images/hala/collab/hala-merchant-v2.png" | relURL }}" alt="Hala — Merchant" loading="lazy">
+    <div class="label">The Merchant</div>
+  </div>
+  <div class="showcase-card">
+    <img src="{{ "images/hala/collab/hala-willy-v2.png" | relURL }}" alt="Hala — Willy" loading="lazy">
+    <div class="label">Willy</div>
+  </div>
+  <div class="showcase-card">
+    <img src="{{ "images/hala/collab/hala-grandmaster.png" | relURL }}" alt="Hala — Grand Master V1" loading="lazy">
+    <div class="label">Grand Master — Alt</div>
+  </div>
+</div>
+
+<!-- Process -->
+<h2 class="section-title">How We Work</h2>
+<div class="section-line"></div>
+<div class="process-steps">
+  <div class="process-step">
+    <span class="step-num">1</span>
+    <h3>Brief</h3>
+    <p>Share your brand story, target audience, and vision. We listen first.</p>
+  </div>
+  <div class="process-step">
+    <span class="step-num">2</span>
+    <h3>Concept</h3>
+    <p>Our studio develops character concepts, colorways, and product mockups within 5 business days.</p>
+  </div>
+  <div class="process-step">
+    <span class="step-num">3</span>
+    <h3>Production</h3>
+    <p>From 3D sculpting to factory sampling. 45-60 day lead time for mass production.</p>
+  </div>
+  <div class="process-step">
+    <span class="step-num">4</span>
+    <h3>Launch</h3>
+    <p>Dubai warehouse fulfillment. Social media campaign support. GCC-wide distribution.</p>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="about-banner">
+  <h2>Start a Collaboration</h2>
+  <p>Tell us about your brand and what you envision. Our team in Dubai will get back to you within 24 hours.</p>
+  <a href="https://wa.me/971555671672" class="cta">WhatsApp Us</a>
+</div>
+
+{{ end }}

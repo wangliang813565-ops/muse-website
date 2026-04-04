@@ -1,0 +1,295 @@
+{{ define "main" }}
+
+<style>
+  .custom-hero {
+    background: linear-gradient(135deg, var(--taupe) 0%, #2A2420 100%);
+    color: var(--pearl);
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  .custom-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2.6rem;
+    color: var(--sand);
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+  }
+  .custom-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--blush);
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  /* Product categories */
+  .custom-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+  }
+  .cat-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .cat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(58,48,40,0.1);
+  }
+  .cat-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    background: var(--pearl);
+    padding: 1rem;
+  }
+  .cat-card-body {
+    padding: 1.2rem 1.5rem 1.5rem;
+  }
+  .cat-card-body h3 {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    color: var(--taupe);
+    margin-bottom: 0.5rem;
+  }
+  .cat-card-body p {
+    font-size: 0.88rem;
+    color: var(--greige);
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+  }
+  .cat-card-body .moq {
+    font-size: 0.78rem;
+    color: var(--sand);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  /* Specs table */
+  .spec-table {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+  }
+  .spec-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .spec-table th {
+    text-align: left;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--taupe);
+    padding: 0.8rem 1rem;
+    border-bottom: 2px solid var(--sand);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .spec-table td {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    color: var(--greige);
+    border-bottom: 1px solid var(--cream-dark);
+  }
+
+  /* Use cases */
+  .use-cases {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+  }
+  .use-case {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: var(--cream-dark);
+    border-radius: 8px;
+  }
+  .use-case .uc-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+  .use-case h3 {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    color: var(--taupe);
+    margin-bottom: 0.5rem;
+  }
+  .use-case p {
+    font-size: 0.82rem;
+    color: var(--greige);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 900px) {
+    .custom-categories { grid-template-columns: 1fr; }
+    .use-cases { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .custom-hero h1 { font-size: 2rem; }
+  }
+</style>
+
+<!-- Hero -->
+<div class="custom-hero">
+  <h1>IP Merchandise Customization</h1>
+  <p>From concept to finished product — we turn your brand, mascot, or original character into a full line of designer toys and collectible merchandise, manufactured and shipped from Dubai.</p>
+</div>
+
+<!-- Product Categories -->
+<h2 class="section-title">What We Make</h2>
+<div class="section-line"></div>
+<div class="custom-categories">
+  <div class="cat-card">
+    <img src="{{ "images/hala/mockups/mockup_blindbox.png" | relURL }}" alt="Custom Blind Box" loading="lazy">
+    <div class="cat-card-body">
+      <h3>Blind Box Figures</h3>
+      <p>PVC or vinyl figures, 6-12 designs per series. Individually boxed with collectible inserts and hidden chase editions.</p>
+      <div class="moq">MOQ: 500 per design</div>
+    </div>
+  </div>
+  <div class="cat-card">
+    <img src="{{ "images/hala/mockups/mockup_plush.png" | relURL }}" alt="Custom Plush" loading="lazy">
+    <div class="cat-card-body">
+      <h3>Plush Toys & Keychains</h3>
+      <p>Soft plush in custom sizes — from 8cm keychain danglers to 30cm collectible plush. Crystal super-soft or classic cotton fill.</p>
+      <div class="moq">MOQ: 300 per style</div>
+    </div>
+  </div>
+  <div class="cat-card">
+    <img src="{{ "images/hala/mockups/mockup_totebag.png" | relURL }}" alt="Custom Merchandise" loading="lazy">
+    <div class="cat-card-body">
+      <h3>Lifestyle Merchandise</h3>
+      <p>Phone cases, tote bags, sticker sets, enamel pins, mugs, and more. Full printing and embroidery customization.</p>
+      <div class="moq">MOQ: 100 per item</div>
+    </div>
+  </div>
+</div>
+
+<!-- Specification Table -->
+<h2 class="section-title">Production Specs</h2>
+<div class="section-line"></div>
+<div class="spec-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Material</th>
+        <th>Lead Time</th>
+        <th>MOQ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Blind Box (PVC)</td>
+        <td>PVC / ABS</td>
+        <td>45-60 days</td>
+        <td>500 pcs/design</td>
+      </tr>
+      <tr>
+        <td>Vinyl Figure</td>
+        <td>Soft vinyl</td>
+        <td>50-70 days</td>
+        <td>300 pcs</td>
+      </tr>
+      <tr>
+        <td>Plush Toy</td>
+        <td>Crystal super-soft</td>
+        <td>30-45 days</td>
+        <td>300 pcs/style</td>
+      </tr>
+      <tr>
+        <td>Plush Keychain</td>
+        <td>Crystal super-soft</td>
+        <td>25-35 days</td>
+        <td>500 pcs</td>
+      </tr>
+      <tr>
+        <td>Phone Case</td>
+        <td>TPU / PC</td>
+        <td>15-20 days</td>
+        <td>100 pcs</td>
+      </tr>
+      <tr>
+        <td>Canvas Tote</td>
+        <td>12oz cotton canvas</td>
+        <td>15-20 days</td>
+        <td>100 pcs</td>
+      </tr>
+      <tr>
+        <td>Sticker Set</td>
+        <td>Waterproof PVC</td>
+        <td>7-10 days</td>
+        <td>200 sets</td>
+      </tr>
+      <tr>
+        <td>Enamel Pin</td>
+        <td>Zinc alloy + enamel</td>
+        <td>20-30 days</td>
+        <td>200 pcs</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Use Cases -->
+<h2 class="section-title">Popular Use Cases</h2>
+<div class="section-line"></div>
+<div class="use-cases">
+  <div class="use-case">
+    <span class="uc-icon">&#9788;</span>
+    <h3>Ramadan & Eid Gifts</h3>
+    <p>Branded collectibles for seasonal corporate gifting. Custom packaging with your company logo.</p>
+  </div>
+  <div class="use-case">
+    <span class="uc-icon">&#9733;</span>
+    <h3>Brand Mascot Merch</h3>
+    <p>Turn your brand mascot into a blind box series, plush line, or limited-edition vinyl figure.</p>
+  </div>
+  <div class="use-case">
+    <span class="uc-icon">&#9998;</span>
+    <h3>Event Giveaways</h3>
+    <p>Conferences, exhibitions, and product launches. Memorable collectibles that people keep, not throw away.</p>
+  </div>
+  <div class="use-case">
+    <span class="uc-icon">&#9830;</span>
+    <h3>Retail Private Label</h3>
+    <p>Launch your own toy brand. We handle design, production, and Dubai warehouse fulfillment.</p>
+  </div>
+</div>
+
+<!-- Process -->
+<h2 class="section-title">Our Process</h2>
+<div class="section-line"></div>
+<div style="max-width: 800px; margin: 0 auto 3rem; padding: 0 2rem;">
+  <div style="display: grid; grid-template-columns: 40px 1fr; gap: 0.8rem 1.2rem; align-items: start;">
+    <span class="step-num" style="display:inline-block; width:36px; height:36px; line-height:36px; border-radius:50%; background:var(--sand); color:var(--white); font-family:var(--font-heading); font-size:1rem; text-align:center;">1</span>
+    <div><strong style="color:var(--taupe);">Share Your Vision</strong><br><span style="color:var(--greige); font-size:0.9rem;">Send us your brand guidelines, character art, or just an idea. We'll take it from there.</span></div>
+
+    <span class="step-num" style="display:inline-block; width:36px; height:36px; line-height:36px; border-radius:50%; background:var(--sand); color:var(--white); font-family:var(--font-heading); font-size:1rem; text-align:center;">2</span>
+    <div><strong style="color:var(--taupe);">Design & Sampling</strong><br><span style="color:var(--greige); font-size:0.9rem;">2D concept art, 3D modeling, and physical sample production. Revisions until you approve.</span></div>
+
+    <span class="step-num" style="display:inline-block; width:36px; height:36px; line-height:36px; border-radius:50%; background:var(--sand); color:var(--white); font-family:var(--font-heading); font-size:1rem; text-align:center;">3</span>
+    <div><strong style="color:var(--taupe);">Mass Production</strong><br><span style="color:var(--greige); font-size:0.9rem;">Factory production with QC inspection. Shipped to our Dubai warehouse or directly to you.</span></div>
+
+    <span class="step-num" style="display:inline-block; width:36px; height:36px; line-height:36px; border-radius:50%; background:var(--sand); color:var(--white); font-family:var(--font-heading); font-size:1rem; text-align:center;">4</span>
+    <div><strong style="color:var(--taupe);">Delivery & Support</strong><br><span style="color:var(--greige); font-size:0.9rem;">GCC-wide logistics from Dubai. Optional: retail placement, social media marketing, and reorder management.</span></div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="about-banner">
+  <h2>Ready to Create?</h2>
+  <p>From a napkin sketch to 10,000 units on shelves — we make it happen. Tell us what you need.</p>
+  <a href="https://wa.me/971555671672" class="cta">Start Your Project</a>
+</div>
+
+{{ end }}

@@ -58,6 +58,14 @@
       letter-spacing: 8px;
       color: var(--sand);
       text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    header .brand-logo {
+      height: 36px;
+      width: auto;
+      border-radius: 0;
     }
     header nav { display: flex; align-items: center; gap: 1.8rem; }
     header nav a {
@@ -362,10 +370,13 @@
 </head>
 <body>
   <header>
-    <a href="{{ .Site.BaseURL }}" class="brand">MUSE</a>
+    <a href="{{ .Site.BaseURL }}" class="brand"><img src="{{ "images/brand/muse-logo.png" | relURL }}" alt="MUSE" class="brand-logo">MUSE</a>
     <nav>
-      <a href="{{ "blog/" | relLangURL }}">Blog</a>
+      <a href="{{ "hala/" | relLangURL }}">Hala IP</a>
+      <a href="{{ "collaboration/" | relLangURL }}">Collaboration</a>
+      <a href="{{ "custom/" | relLangURL }}">Custom</a>
       <a href="{{ "products/" | relLangURL }}">Products</a>
+      <a href="{{ "blog/" | relLangURL }}">Blog</a>
       {{ if eq .Lang "en" }}
         <a href="{{ .Site.BaseURL }}ar/">العربية</a>
       {{ else }}

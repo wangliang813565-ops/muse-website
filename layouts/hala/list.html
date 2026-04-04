@@ -1,0 +1,297 @@
+{{ define "main" }}
+
+<style>
+  .ip-hero {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background: var(--taupe);
+  }
+  .ip-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+  }
+  .ip-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(58,48,40,0.85) 0%, rgba(58,48,40,0.3) 50%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 3rem 6%;
+  }
+  .ip-hero-text { max-width: 600px; color: var(--pearl); }
+  .ip-hero-text h1 {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    color: var(--pearl);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+  .ip-hero-text .tagline {
+    font-size: 1.2rem;
+    color: var(--blush);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  .ip-hero-text p {
+    font-size: 1rem;
+    color: var(--cream-dark);
+    line-height: 1.7;
+  }
+
+  /* Character intro */
+  .char-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: var(--max-width);
+    margin: 3rem auto;
+    padding: 0 2rem;
+    align-items: center;
+  }
+  .char-intro img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .char-intro .char-details h2 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--taupe);
+    border: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .char-intro .char-details p {
+    color: var(--greige);
+    line-height: 1.8;
+  }
+  .char-traits {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+  }
+  .char-traits span {
+    background: var(--cream-dark);
+    color: var(--greige);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    letter-spacing: 0.5px;
+  }
+
+  /* Costume variants */
+  .costume-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+  }
+  .costume-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .costume-card img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: contain;
+    background: var(--pearl);
+    padding: 1rem;
+  }
+  .costume-card .label {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--greige);
+    letter-spacing: 0.5px;
+  }
+
+  /* Scene gallery */
+  .scene-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+  }
+  .scene-gallery img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.2s;
+  }
+  .scene-gallery img:hover { transform: scale(1.03); }
+
+  /* Merchandise */
+  .merch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+  }
+  .merch-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .merch-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(58,48,40,0.1);
+  }
+  .merch-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    background: var(--pearl);
+    padding: 0.8rem;
+  }
+  .merch-card .label {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--greige);
+  }
+
+  /* Emoji strip */
+  .emoji-strip {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+  .emoji-strip img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .char-intro { grid-template-columns: 1fr; gap: 1.5rem; }
+    .costume-grid, .scene-gallery, .merch-grid { grid-template-columns: repeat(2, 1fr); }
+    .ip-hero { height: 340px; }
+    .ip-hero-text h1 { font-size: 2rem; }
+  }
+</style>
+
+<!-- Hero -->
+<div class="ip-hero">
+  <img src="{{ "images/hala/hero_scene.png" | relURL }}" alt="Hala — Baby Saker Falcon">
+  <div class="ip-hero-overlay">
+    <div class="ip-hero-text">
+      <h1>Meet Hala</h1>
+      <div class="tagline">"A little piece of home"</div>
+      <p>A baby Saker Falcon from Abu Dhabi. Serene, warm, and unmistakably Gulf — MUSE Studio's first original IP character.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Character Introduction -->
+<h2 class="section-title">Character Profile</h2>
+<div class="section-line"></div>
+<div class="char-intro">
+  <img src="{{ "images/hala/hala_main_3d.jpg" | relURL }}" alt="Hala 3D render">
+  <div class="char-details">
+    <h2>Hala (هلا)</h2>
+    <p>In Arabic, "Hala" means welcome — a greeting of warmth. She is a baby Saker Falcon, the noble raptor of the Arabian Peninsula, reimagined as a plump, gentle character in traditional Emirati dress.</p>
+    <p>Hala doesn't speak. But her quiet presence radiates home, comfort, and a pride that needs no words. She embodies the spirit of Gulf hospitality — an invitation to slow down and belong.</p>
+    <div class="char-traits">
+      <span>Serene</span>
+      <span>Warm</span>
+      <span>Gentle</span>
+      <span>Proud</span>
+      <span>Cozy</span>
+    </div>
+  </div>
+</div>
+
+<!-- Costume Variants -->
+<h2 class="section-title">Kandura Collection</h2>
+<div class="section-line"></div>
+<div class="costume-grid">
+  <div class="costume-card">
+    <img src="{{ "images/hala/hala_kandura_white.png" | relURL }}" alt="Hala — White Kandura" loading="lazy">
+    <div class="label">Classic White Kandura</div>
+  </div>
+  <div class="costume-card">
+    <img src="{{ "images/hala/hala_kandura_plain.png" | relURL }}" alt="Hala — Formal Edition" loading="lazy">
+    <div class="label">Formal Edition</div>
+  </div>
+  <div class="costume-card">
+    <img src="{{ "images/hala/hala_kandura_red_check.png" | relURL }}" alt="Hala — Saudi Ghutra" loading="lazy">
+    <div class="label">Red Check Ghutra</div>
+  </div>
+</div>
+
+<!-- Scene Gallery -->
+<h2 class="section-title">Scene Gallery</h2>
+<div class="section-line"></div>
+<div class="scene-gallery">
+  <img src="{{ "images/hala/scenes/scene_courtyard.png" | relURL }}" alt="Hala in Marble Courtyard" loading="lazy">
+  <img src="{{ "images/hala/scenes/scene_coffee.png" | relURL }}" alt="Hala Arabic Coffee Ceremony" loading="lazy">
+  <img src="{{ "images/hala/scenes/scene_souq.png" | relURL }}" alt="Hala in the Spice Souq" loading="lazy">
+  <img src="{{ "images/hala/scenes/scene_rainy_window.png" | relURL }}" alt="Hala — Rainy Day Reverie" loading="lazy">
+  <img src="{{ "images/hala/scenes/scene_plush_pile.png" | relURL }}" alt="Hala — Hide in Plush Pile" loading="lazy">
+  <img src="{{ "images/hala/hala_main_3d.jpg" | relURL }}" alt="Hala — Studio Portrait" loading="lazy">
+</div>
+
+<!-- Emoji Pack -->
+<h2 class="section-title">Expression Pack</h2>
+<div class="section-line"></div>
+<div class="emoji-strip">
+  <img src="{{ "images/hala/emoji_pack.png" | relURL }}" alt="Hala Emoji Pack — 6 expressions" loading="lazy">
+</div>
+
+<!-- Merchandise -->
+<h2 class="section-title">Merchandise Lineup</h2>
+<div class="section-line"></div>
+<div class="merch-grid">
+  <div class="merch-card">
+    <img src="{{ "images/hala/mockups/mockup_blindbox.png" | relURL }}" alt="Hala Blind Box" loading="lazy">
+    <div class="label">Blind Box Series</div>
+  </div>
+  <div class="merch-card">
+    <img src="{{ "images/hala/mockups/mockup_plush.png" | relURL }}" alt="Hala Plush Toy" loading="lazy">
+    <div class="label">Plush Toy</div>
+  </div>
+  <div class="merch-card">
+    <img src="{{ "images/hala/mockups/mockup_keychain.png" | relURL }}" alt="Hala Keychain" loading="lazy">
+    <div class="label">Plush Keychain</div>
+  </div>
+  <div class="merch-card">
+    <img src="{{ "images/hala/mockups/mockup_phonecase.png" | relURL }}" alt="Hala Phone Case" loading="lazy">
+    <div class="label">Phone Case</div>
+  </div>
+  <div class="merch-card">
+    <img src="{{ "images/hala/mockups/mockup_totebag.png" | relURL }}" alt="Hala Tote Bag" loading="lazy">
+    <div class="label">Canvas Tote Bag</div>
+  </div>
+  <div class="merch-card">
+    <img src="{{ "images/hala/mockups/mockup_stickers.png" | relURL }}" alt="Hala Stickers" loading="lazy">
+    <div class="label">Sticker Set</div>
+  </div>
+</div>
+
+<!-- Three Views -->
+<h2 class="section-title">Production Blueprint</h2>
+<div class="section-line"></div>
+<div style="max-width: 900px; margin: 0 auto 3rem; padding: 0 2rem;">
+  <img src="{{ "images/hala/hala_three_views.jpg" | relURL }}" alt="Hala — Three View Blueprint" style="width:100%; border-radius: 8px;" loading="lazy">
+</div>
+
+<!-- CTA -->
+<div class="about-banner">
+  <h2>Interested in Hala?</h2>
+  <p>Whether you're a retailer, event planner, or brand looking for a co-branded character — Hala is ready to represent the warmth of the Gulf in your next project.</p>
+  <a href="https://wa.me/971555671672" class="cta">Get in Touch</a>
+</div>
+
+{{ end }}
