@@ -176,7 +176,10 @@
     .char-grid { grid-template-columns: repeat(3, 1fr); }
   }
   @media (max-width: 768px) {
-    .collab-hero h1 { font-size: 2rem; }
+    .collab-hero { aspect-ratio: 4/3; }
+    .collab-hero h1 { font-size: 1.5rem; }
+    .collab-hero p { font-size: 0.88rem; }
+    .collab-hero-overlay { padding: 2rem 1.2rem; }
     .char-grid { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
     .process-flow { grid-template-columns: repeat(2, 1fr); }
   }
