@@ -2,15 +2,33 @@
 
 <style>
   .custom-hero {
-    background: linear-gradient(135deg, var(--taupe) 0%, #2A2420 100%);
-    color: var(--pearl);
-    padding: 5rem 2rem;
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    background: var(--taupe);
+  }
+  .custom-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .custom-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(42,36,32,0.88) 0%, rgba(42,36,32,0.4) 50%, rgba(42,36,32,0.15) 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 3rem 2rem;
     text-align: center;
   }
+  .custom-hero-text { max-width: 700px; }
   .custom-hero h1 {
     font-family: var(--font-heading);
     font-size: 2.6rem;
-    color: var(--sand);
+    color: var(--pearl);
     margin-bottom: 1rem;
     letter-spacing: 2px;
   }
@@ -143,8 +161,13 @@
 
 <!-- Hero -->
 <div class="custom-hero">
-  <h1>{{ .Params.hero_title | default "IP Merchandise Customization" }}</h1>
-  <p>From concept to finished product — we turn your brand, mascot, or original character into a full line of designer toys and collectible merchandise, manufactured and shipped from Dubai.</p>
+  <img src="{{ "images/hala/merch/products-grid.jpg" | relURL }}" alt="MUSE Custom Merchandise">
+  <div class="custom-hero-overlay">
+    <div class="custom-hero-text">
+      <h1>{{ .Params.hero_title | default "IP Merchandise Customization" }}</h1>
+      <p>From concept to finished product — we turn your brand, mascot, or original character into a full line of designer toys and collectible merchandise, manufactured and shipped from Dubai.</p>
+    </div>
+  </div>
 </div>
 
 <!-- Product Showcase -->

@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+<style>
+  .blog-hero {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    background: var(--taupe);
+  }
+  .blog-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+  }
+  .blog-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(58,48,40,0.88) 0%, rgba(58,48,40,0.35) 50%, rgba(58,48,40,0.1) 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .blog-hero-text { max-width: 700px; }
+  .blog-hero-text h1 {
+    font-family: var(--font-heading);
+    font-size: 2.6rem;
+    color: var(--pearl);
+    margin-bottom: 0.8rem;
+    letter-spacing: 2px;
+  }
+  .blog-hero-text p {
+    color: var(--blush);
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+</style>
+
+<!-- Hero -->
+<div class="blog-hero">
+  <img src="{{ "images/scenes/eid-2026/04_baby-falcon-v3_seaside-sunset.png" | relURL }}" alt="MUSE Blog">
+  <div class="blog-hero-overlay">
+    <div class="blog-hero-text">
+      <h1>{{ .Params.hero_title | default .Title }}</h1>
+      <p>{{ .Description }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  {{ .Content }}
+  <div class="blog-list">
+    {{ range .Pages.ByDate.Reverse }}
+    <article>
+      <div class="meta">{{ .Date.Format "January 2, 2006" }} {{ with .Params.categories }}· {{ delimit . ", " }}{{ end }}</div>
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Description | default .Summary }}</p>
+    </article>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

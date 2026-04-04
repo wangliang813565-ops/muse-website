@@ -2,15 +2,33 @@
 
 <style>
   .collab-hero {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
     background: var(--taupe);
-    color: var(--pearl);
-    padding: 5rem 2rem;
+  }
+  .collab-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+  }
+  .collab-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(58,48,40,0.85) 0%, rgba(58,48,40,0.4) 50%, rgba(58,48,40,0.2) 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 3rem 2rem;
     text-align: center;
   }
+  .collab-hero-text { max-width: 700px; }
   .collab-hero h1 {
     font-family: var(--font-heading);
     font-size: 2.6rem;
-    color: var(--sand);
+    color: var(--pearl);
     margin-bottom: 1rem;
     letter-spacing: 2px;
   }
@@ -194,8 +212,13 @@
 
 <!-- Hero -->
 <div class="collab-hero">
-  <h1>{{ .Params.hero_title | default "IP Collaboration" }}</h1>
-  <p>Partner with MUSE to bring your brand into the world of designer toys. From themed character crossovers to co-branded collections, we create collectibles that resonate with the Gulf market.</p>
+  <img src="{{ "images/hala/collab-timeline.png" | relURL }}" alt="MUSE IP Collaboration">
+  <div class="collab-hero-overlay">
+    <div class="collab-hero-text">
+      <h1>{{ .Params.hero_title | default "IP Collaboration" }}</h1>
+      <p>Partner with MUSE to bring your brand into the world of designer toys. From themed character crossovers to co-branded collections, we create collectibles that resonate with the Gulf market.</p>
+    </div>
+  </div>
 </div>
 
 <!-- Collaboration Models -->
