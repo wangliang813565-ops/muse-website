@@ -1,5 +1,188 @@
 {{ define "main" }}
 
+<style>
+  /* ── Hala Spotlight ── */
+  .hala-spotlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    max-width: 100%;
+    margin: 0;
+    background: var(--taupe);
+  }
+  .hala-spotlight-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 420px;
+  }
+  .hala-spotlight-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 3.5rem;
+    color: var(--ivory);
+  }
+  .hala-spotlight-text .tagline {
+    font-size: 0.78rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--sand);
+    margin-bottom: 1rem;
+  }
+  .hala-spotlight-text h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--pearl);
+    margin-bottom: 0.5rem;
+    border: none;
+    padding: 0;
+    letter-spacing: 1px;
+  }
+  .hala-spotlight-text .subtitle {
+    font-style: italic;
+    color: var(--blush);
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+  }
+  .hala-spotlight-text p {
+    color: var(--cream-dark);
+    line-height: 1.8;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .hala-spotlight-text .cta-outline {
+    display: inline-block;
+    border: 1px solid var(--sand);
+    color: var(--sand);
+    padding: 0.6rem 1.8rem;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.2s;
+    width: fit-content;
+  }
+  .hala-spotlight-text .cta-outline:hover {
+    background: var(--sand);
+    color: var(--taupe);
+  }
+
+  /* ── IP Services Grid ── */
+  .ip-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    max-width: 100%;
+  }
+  .ip-service-card {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4/5;
+  }
+  .ip-service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+    border-radius: 0;
+  }
+  .ip-service-card:hover img {
+    transform: scale(1.05);
+  }
+  .ip-service-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(to top, rgba(42,36,32,0.92) 0%, rgba(42,36,32,0.5) 50%, transparent 100%);
+    padding: 2rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  .ip-service-overlay h3 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    color: var(--pearl);
+    margin-bottom: 0.4rem;
+    letter-spacing: 1px;
+  }
+  .ip-service-overlay p {
+    font-size: 0.82rem;
+    color: var(--blush);
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+  }
+  .ip-service-overlay a {
+    font-size: 0.72rem;
+    color: var(--sand);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .ip-service-overlay a:hover { color: var(--pearl); }
+
+  /* ── Scene Strip (horizontal scroll on mobile) ── */
+  .scene-strip {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+  }
+  .scene-strip img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s;
+  }
+  .scene-strip img:hover { transform: scale(1.04); }
+
+  /* ── Stats Bar ── */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .stat-item {
+    padding: 1rem;
+  }
+  .stat-num {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--sand);
+    letter-spacing: 1px;
+    margin-bottom: 0.3rem;
+  }
+  .stat-label {
+    font-size: 0.78rem;
+    color: var(--greige);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 900px) {
+    .hala-spotlight { grid-template-columns: 1fr; }
+    .hala-spotlight-img { min-height: 280px; }
+    .hala-spotlight-text { padding: 2.5rem 1.5rem; }
+    .ip-services { grid-template-columns: 1fr; }
+    .ip-service-card { aspect-ratio: 16/9; }
+    .scene-strip { grid-template-columns: repeat(3, 1fr); }
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .hala-spotlight-text h2 { font-size: 1.5rem; }
+    .scene-strip { grid-template-columns: repeat(2, 1fr); overflow-x: auto; }
+    .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+    .stat-num { font-size: 1.6rem; }
+  }
+</style>
+
 <!-- Hero Banner -->
 <div class="hero">
   <img src="{{ "images/hero-seaside-wide.jpg" | relURL }}" alt="MUSE Designer Toys — Dubai">
@@ -9,6 +192,26 @@
       <p>{{ .Params.hero_subtitle | default "Curated collectibles, blind boxes, and corporate gifts — shipped from our Dubai warehouse in 2-5 days across the GCC." }}</p>
       <a href="https://wa.me/971555671672" class="cta">Get in Touch</a>
     </div>
+  </div>
+</div>
+
+<!-- Stats Bar -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num">50+</div>
+    <div class="stat-label">SKUs in Stock</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">6</div>
+    <div class="stat-label">GCC Countries</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">2–5</div>
+    <div class="stat-label">Day Delivery</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">1</div>
+    <div class="stat-label">Original IP</div>
   </div>
 </div>
 
@@ -31,6 +234,59 @@
     <h3>Corporate & Event Gifts</h3>
     <p>Custom branded merchandise for Ramadan, Eid, National Day, and corporate occasions. Flexible MOQ, direct sourcing.</p>
   </div>
+</div>
+
+<!-- Hala IP Spotlight -->
+<div class="hala-spotlight">
+  <img src="{{ "images/hala/hero_scene.png" | relURL }}" alt="Hala — Baby Saker Falcon" class="hala-spotlight-img" loading="lazy">
+  <div class="hala-spotlight-text">
+    <div class="tagline">MUSE Original IP</div>
+    <h2>Meet Hala</h2>
+    <div class="subtitle">"A little piece of home"</div>
+    <p>A baby Saker Falcon from Abu Dhabi — the UAE's noble national bird, reimagined as a serene, cozy character in traditional Emirati dress. Hala embodies Gulf hospitality: warm, proud, and quietly healing.</p>
+    <a href="{{ "hala/" | relURL }}" class="cta-outline">Discover Hala</a>
+  </div>
+</div>
+
+<!-- IP Services -->
+<h2 class="section-title">What We Do</h2>
+<div class="section-line"></div>
+<div class="ip-services">
+  <div class="ip-service-card">
+    <img src="{{ "images/hala/collab/hala-cacao-master.png" | relURL }}" alt="IP Collaboration" loading="lazy">
+    <div class="ip-service-overlay">
+      <h3>IP Collaboration</h3>
+      <p>Co-branded blind boxes and themed character crossovers for your brand.</p>
+      <a href="{{ "collaboration/" | relURL }}">Learn More &rarr;</a>
+    </div>
+  </div>
+  <div class="ip-service-card">
+    <img src="{{ "images/hala/mockups/mockup_blindbox.png" | relURL }}" alt="Hala IP Licensing" loading="lazy">
+    <div class="ip-service-overlay">
+      <h3>Hala IP Licensing</h3>
+      <p>Marketing license, brand collab, product license, space license — across GCC.</p>
+      <a href="{{ "hala/" | relURL }}">Explore &rarr;</a>
+    </div>
+  </div>
+  <div class="ip-service-card">
+    <img src="{{ "images/hala/merch/keychain.jpg" | relURL }}" alt="Custom Merchandise" loading="lazy">
+    <div class="ip-service-overlay">
+      <h3>Custom Merchandise</h3>
+      <p>From concept to delivery — keychains, tote bags, mugs, figures, and more.</p>
+      <a href="{{ "custom/" | relURL }}">Start a Project &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<!-- Scene Gallery Strip -->
+<h2 class="section-title">Scenes from Hala's World</h2>
+<div class="section-line"></div>
+<div class="scene-strip">
+  <img src="{{ "images/hala/scenes/scene_courtyard.png" | relURL }}" alt="Marble Courtyard" loading="lazy">
+  <img src="{{ "images/hala/scenes/scene_coffee.png" | relURL }}" alt="Arabic Coffee Ceremony" loading="lazy">
+  <img src="{{ "images/hala/scenes/scene_souq.png" | relURL }}" alt="The Spice Souq" loading="lazy">
+  <img src="{{ "images/hala/scenes/scene_rainy_window.png" | relURL }}" alt="Rainy Day Reverie" loading="lazy">
+  <img src="{{ "images/hala/scenes/scene_plush_pile.png" | relURL }}" alt="Plush Pile" loading="lazy">
 </div>
 
 <!-- Product Showcase -->
