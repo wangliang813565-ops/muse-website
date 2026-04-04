@@ -1,18 +1,82 @@
 {{ define "main" }}
-<div class="content">
-  {{ .Content }}
-  {{ $blogs := where .Site.RegularPages "Section" "blog" }}
-  {{ if $blogs }}
-  <h2>Latest from the Blog</h2>
-  <div class="blog-list">
-    {{ range first 5 $blogs.ByDate.Reverse }}
-    <article>
-      <div class="meta">{{ .Date.Format "January 2, 2006" }}</div>
-      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-      <p>{{ .Description | default .Summary }}</p>
-    </article>
-    {{ end }}
+
+<!-- Hero Banner -->
+<div class="hero">
+  <img src="{{ "images/hero-seaside-wide.jpg" | relURL }}" alt="MUSE Designer Toys — Dubai">
+  <div class="hero-overlay">
+    <div class="hero-text">
+      <h1>Designer Toys for the Gulf Market</h1>
+      <p>Curated collectibles, blind boxes, and corporate gifts — shipped from our Dubai warehouse in 2-5 days across the GCC.</p>
+      <a href="https://wa.me/971555671672" class="cta">Get in Touch</a>
+    </div>
   </div>
+</div>
+
+<!-- Value Propositions -->
+<h2 class="section-title">Why MUSE</h2>
+<div class="section-line"></div>
+<div class="values">
+  <div class="value-card">
+    <span class="value-icon">&#9201;</span>
+    <h3>Dubai Ready Stock</h3>
+    <p>2-5 day delivery across UAE, Saudi, Qatar, Kuwait, Bahrain, and Oman. No 30-day wait from overseas.</p>
+  </div>
+  <div class="value-card">
+    <span class="value-icon">&#10022;</span>
+    <h3>Curated Selection</h3>
+    <p>50+ SKUs of blind boxes, vinyl figures, plush keychains, and art collectibles — hand-picked for GCC retail demand.</p>
+  </div>
+  <div class="value-card">
+    <span class="value-icon">&#9734;</span>
+    <h3>Corporate & Event Gifts</h3>
+    <p>Custom branded merchandise for Ramadan, Eid, National Day, and corporate occasions. Flexible MOQ, direct sourcing.</p>
+  </div>
+</div>
+
+<!-- Product Showcase -->
+<h2 class="section-title">Our Collection</h2>
+<div class="section-line"></div>
+<div class="product-grid">
+  <div class="product-card">
+    <img src="{{ "images/products/daixiaodai-big/1.png" | relURL }}" alt="DaiXiaoDai Animal Carnival" loading="lazy">
+    <div class="product-name">DaiXiaoDai — Group Photo</div>
+  </div>
+  <div class="product-card">
+    <img src="{{ "images/products/daixiaodai-big/3.png" | relURL }}" alt="DaiXiaoDai Bamboo Panda" loading="lazy">
+    <div class="product-name">DaiXiaoDai — Bamboo Panda</div>
+  </div>
+  <div class="product-card">
+    <img src="{{ "images/products/daixiaodai-big/5.png" | relURL }}" alt="DaiXiaoDai White Rabbit" loading="lazy">
+    <div class="product-name">DaiXiaoDai — White Rabbit</div>
+  </div>
+  <div class="product-card">
+    <img src="{{ "images/products/daixiaodai-big/8.png" | relURL }}" alt="DaiXiaoDai Pink Dino" loading="lazy">
+    <div class="product-name">DaiXiaoDai — Pink Dino</div>
+  </div>
+</div>
+
+<!-- About / CTA Banner -->
+<div class="about-banner">
+  <h2>The GCC's Designer Toy Partner</h2>
+  <p>MUSE is the first professional designer toy distributor in the Gulf region. We source globally and deliver locally — helping retailers stock trending collectibles without the risk and delay of overseas imports.</p>
+  <p>Whether you need 10 pieces or 10,000, we handle sourcing, warehousing, and GCC-wide logistics from Dubai.</p>
+  <a href="https://wa.me/971555671672" class="cta">WhatsApp Us</a>
+</div>
+
+<!-- Blog Section -->
+{{ $blogs := where .Site.RegularPages "Section" "blog" }}
+{{ if $blogs }}
+<h2 class="section-title">From the Blog</h2>
+<div class="section-line"></div>
+<div class="blog-list">
+  {{ range first 3 $blogs.ByDate.Reverse }}
+  <article>
+    <div class="meta">{{ .Date.Format "January 2, 2006" }}{{ with .Params.tags }} · {{ delimit . ", " }}{{ end }}</div>
+    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Description | default .Summary }}</p>
+  </article>
   {{ end }}
 </div>
+{{ end }}
+
 {{ end }}
