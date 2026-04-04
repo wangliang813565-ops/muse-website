@@ -92,53 +92,24 @@
     margin-bottom: 1rem;
   }
 
-  /* ── Horizontal scroll carousel ── */
-  .char-carousel-wrap {
-    max-width: 100%;
-    overflow: hidden;
-    margin: 0 0 3rem;
-    position: relative;
-  }
-  .char-carousel-wrap::before,
-  .char-carousel-wrap::after {
-    content: '';
-    position: absolute;
-    top: 0; bottom: 0;
-    width: 60px;
-    z-index: 2;
-    pointer-events: none;
-  }
-  .char-carousel-wrap::before {
-    left: 0;
-    background: linear-gradient(to right, var(--pearl), transparent);
-  }
-  .char-carousel-wrap::after {
-    right: 0;
-    background: linear-gradient(to left, var(--pearl), transparent);
-  }
-  .char-carousel {
-    display: flex;
+  /* ── Character Grid ── */
+  .char-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 1.2rem;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 1rem 2rem 1.5rem;
-    scrollbar-width: none;
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
   }
-  .char-carousel::-webkit-scrollbar { display: none; }
   .char-card {
-    flex: 0 0 220px;
-    scroll-snap-align: start;
     background: var(--white);
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
-    cursor: default;
-    position: relative;
   }
   .char-card:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 16px 48px rgba(58,48,40,0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 36px rgba(58,48,40,0.12);
   }
   .char-card img {
     width: 100%;
@@ -147,29 +118,20 @@
     display: block;
   }
   .char-card .char-info {
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 0.8rem;
     text-align: center;
   }
   .char-card .char-name {
     font-family: var(--font-heading);
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     color: var(--taupe);
     letter-spacing: 0.5px;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.15rem;
   }
   .char-card .char-role {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--greige);
     letter-spacing: 0.3px;
-  }
-
-  /* Scroll hint */
-  .scroll-hint {
-    text-align: center;
-    font-size: 0.78rem;
-    color: var(--greige);
-    margin: -1.5rem 0 2rem;
-    letter-spacing: 1px;
   }
 
   /* ── Process ── */
@@ -205,15 +167,18 @@
   }
   .process-step p { font-size: 0.88rem; color: var(--greige); line-height: 1.6; }
 
+  @media (max-width: 1100px) {
+    .char-grid { grid-template-columns: repeat(4, 1fr); }
+  }
   @media (max-width: 900px) {
     .collab-models { grid-template-columns: 1fr; }
     .process-steps { grid-template-columns: repeat(2, 1fr); }
     .case-intro { grid-template-columns: 1fr; gap: 1.5rem; }
-    .char-card { flex: 0 0 180px; }
+    .char-grid { grid-template-columns: repeat(3, 1fr); }
   }
   @media (max-width: 768px) {
     .collab-hero h1 { font-size: 2rem; }
-    .char-card { flex: 0 0 160px; }
+    .char-grid { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
   }
 </style>
 
@@ -259,82 +224,79 @@
   </div>
 </div>
 
-<!-- Character Carousel -->
-<div class="char-carousel-wrap">
-  <div class="char-carousel">
-    <div class="char-card">
-      <img src="{{ "images/hala/collab/hala-cacao-master.png" | relURL }}" alt="Cacao Master" loading="lazy">
-      <div class="char-info">
-        <div class="char-name">Cacao Master</div>
-        <div class="char-role">The guild leader</div>
-      </div>
+<!-- Character Grid -->
+<div class="char-grid">
+  <div class="char-card">
+    <img src="{{ "images/hala/collab/hala-cacao-master.png" | relURL }}" alt="Cacao Master" loading="lazy">
+    <div class="char-info">
+      <div class="char-name">Cacao Master</div>
+      <div class="char-role">The guild leader</div>
     </div>
-    <div class="char-card">
-      <img src="{{ "images/hala/collab/hala-cacao-cape.png" | relURL }}" alt="Cacao Cape" loading="lazy">
-      <div class="char-info">
-        <div class="char-name">Cacao Cape</div>
-        <div class="char-role">The elegant guardian</div>
-      </div>
+  </div>
+  <div class="char-card">
+    <img src="{{ "images/hala/collab/hala-cacao-cape.png" | relURL }}" alt="Cacao Cape" loading="lazy">
+    <div class="char-info">
+      <div class="char-name">Cacao Cape</div>
+      <div class="char-role">The elegant guardian</div>
     </div>
-    <div class="char-card">
-      <img src="{{ "images/hala/collab/hala-chocolate-phantom.png" | relURL }}" alt="Chocolate Phantom" loading="lazy">
-      <div class="char-info">
-        <div class="char-name">Chocolate Phantom</div>
-        <div class="char-role">The masked mystery</div>
-      </div>
+  </div>
+  <div class="char-card">
+    <img src="{{ "images/hala/collab/hala-chocolate-phantom.png" | relURL }}" alt="Chocolate Phantom" loading="lazy">
+    <div class="char-info">
+      <div class="char-name">Chocolate Phantom</div>
+      <div class="char-role">The masked mystery</div>
     </div>
-    <div class="char-card">
-      <img src="{{ "images/hala/collab/hala-chocolatier-v2.png" | relURL }}" alt="The Chocolatier" loading="lazy">
-      <div class="char-info">
-        <div class="char-name">The Chocolatier</div>
-        <div class="char-role">Master of pralines</div>
-      </div>
+  </div>
+  <div class="char-card">
+    <img src="{{ "images/hala/collab/hala-chocolatier-v2.png" | relURL }}" alt="The Chocolatier" loading="lazy">
+    <div class="char-info">
+      <div class="char-name">The Chocolatier</div>
+      <div class="char-role">Master of pralines</div>
     </div>
-    <div class="char-card">
-      <img src="{{ "images/hala/collab/hala-connoisseur-v3.png" | relURL }}" alt="The Connoisseur" loading="lazy">
-      <div class="char-info">
-        <div class="char-name">The Connoisseur</div>
-        <div class="char-role">The refined taster</div>
-      </div>
+  </div>
+  <div class="char-card">
+    <img src="{{ "images/hala/collab/hala-connoisseur-v3.png" | relURL }}" alt="The Connoisseur" loading="lazy">
+    <div class="char-info">
+      <div class="char-name">The Connoisseur</div>
+      <div class="char-role">The refined taster</div>
     </div>
-    <div class="char-card">
-      <img src="{{ "images/hala/collab/hala-cacao-priest.png" | relURL }}" alt="Cacao Priest" loading="lazy">
-      <div class="char-info">
-        <div class="char-name">Cacao Priest</div>
-        <div class="char-role">Keeper of ancient beans</div>
-      </div>
+  </div>
+  <div class="char-card">
+    <img src="{{ "images/hala/collab/hala-cacao-priest.png" | relURL }}" alt="Cacao Priest" loading="lazy">
+    <div class="char-info">
+      <div class="char-name">Cacao Priest</div>
+      <div class="char-role">Keeper of ancient beans</div>
     </div>
-    <div class="char-card">
-      <img src="{{ "images/hala/collab/hala-pastry-queen.png" | relURL }}" alt="Pastry Queen" loading="lazy">
-      <div class="char-info">
-        <div class="char-name">Pastry Queen</div>
-        <div class="char-role">Ruler of sweet kingdoms</div>
-      </div>
+  </div>
+  <div class="char-card">
+    <img src="{{ "images/hala/collab/hala-pastry-queen.png" | relURL }}" alt="Pastry Queen" loading="lazy">
+    <div class="char-info">
+      <div class="char-name">Pastry Queen</div>
+      <div class="char-role">Ruler of sweet kingdoms</div>
     </div>
-    <div class="char-card">
-      <img src="{{ "images/hala/collab/hala-grandmaster-v2.png" | relURL }}" alt="Grand Master" loading="lazy">
-      <div class="char-info">
-        <div class="char-name">Grand Master</div>
-        <div class="char-role">The golden sovereign</div>
-      </div>
+  </div>
+  <div class="char-card">
+    <img src="{{ "images/hala/collab/hala-grandmaster-v2.png" | relURL }}" alt="Grand Master" loading="lazy">
+    <div class="char-info">
+      <div class="char-name">Grand Master</div>
+      <div class="char-role">The golden sovereign</div>
     </div>
-    <div class="char-card">
-      <img src="{{ "images/hala/collab/hala-merchant-v2.png" | relURL }}" alt="The Merchant" loading="lazy">
-      <div class="char-info">
-        <div class="char-name">The Merchant</div>
-        <div class="char-role">Trader of rare cacao</div>
-      </div>
+  </div>
+  <div class="char-card">
+    <img src="{{ "images/hala/collab/hala-merchant-v2.png" | relURL }}" alt="The Merchant" loading="lazy">
+    <div class="char-info">
+      <div class="char-name">The Merchant</div>
+      <div class="char-role">Trader of rare cacao</div>
     </div>
-    <div class="char-card">
-      <img src="{{ "images/hala/collab/hala-willy-v2.png" | relURL }}" alt="Willy" loading="lazy">
-      <div class="char-info">
-        <div class="char-name">Willy</div>
-        <div class="char-role">The dreamer</div>
-      </div>
+  </div>
+  <div class="char-card">
+    <img src="{{ "images/hala/collab/hala-willy-v2.png" | relURL }}" alt="Willy" loading="lazy">
+    <div class="char-info">
+      <div class="char-name">Willy</div>
+      <div class="char-role">The dreamer</div>
     </div>
   </div>
 </div>
-<div class="scroll-hint">&#8592; SWIPE TO EXPLORE ALL CHARACTERS &#8594;</div>
 
 <!-- Process -->
 <h2 class="section-title">How We Work</h2>
