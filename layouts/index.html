@@ -5,8 +5,8 @@
   <img src="{{ "images/hero-seaside-wide.jpg" | relURL }}" alt="MUSE Designer Toys — Dubai">
   <div class="hero-overlay">
     <div class="hero-text">
-      <h1>Designer Toys for the Gulf Market</h1>
-      <p>Curated collectibles, blind boxes, and corporate gifts — shipped from our Dubai warehouse in 2-5 days across the GCC.</p>
+      <h1>{{ .Params.hero_title | default "Designer Toys for the Gulf Market" }}</h1>
+      <p>{{ .Params.hero_subtitle | default "Curated collectibles, blind boxes, and corporate gifts — shipped from our Dubai warehouse in 2-5 days across the GCC." }}</p>
       <a href="https://wa.me/971555671672" class="cta">Get in Touch</a>
     </div>
   </div>

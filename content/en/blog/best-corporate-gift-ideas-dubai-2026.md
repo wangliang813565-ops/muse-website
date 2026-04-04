@@ -3,9 +3,9 @@ title: "Best Corporate Gift Ideas in Dubai for 2026"
 slug: "best-corporate-gift-ideas-dubai-2026"
 date: 2026-04-04
 description: "Discover the top corporate gift ideas for Dubai businesses in 2026. From designer toys to custom branded merchandise for Ramadan, Eid, and National Day."
-categories: ["Corporate Gifts", "Buying Guide"]
-tags: ["corporate gifts dubai", "designer toys UAE", "Ramadan gifts", "Eid corporate gifts"]
-keywords: ["corporate gift ideas dubai", "bulk corporate gifts UAE", "designer toy gifts dubai", "Ramadan corporate gift boxes"]
+categories: ["Corporate Gifts","Buying Guide"]
+tags: ["corporate gifts dubai","designer toys UAE","Ramadan gifts","Eid corporate gifts"]
+keywords: ["corporate gift ideas dubai","bulk corporate gifts UAE","designer toy gifts dubai","Ramadan corporate gift boxes"]
 cta: true
 faq:
   - q: "What are the best corporate gifts for Ramadan in Dubai?"
