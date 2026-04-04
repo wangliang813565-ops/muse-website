@@ -1,0 +1,53 @@
+baseURL = 'https://musetrendytoy.com/'
+title = 'MUSE — Designer Toys & Corporate Gifts in Dubai'
+languageCode = 'en'
+defaultContentLanguage = 'en'
+enableRobotsTXT = true
+enableEmoji = false
+
+[params]
+  description = 'Premium designer toys, collectibles, and corporate gifts in Dubai. Serving UAE, GCC, and MENA businesses.'
+  brand = 'MUSE'
+  company = 'MUSE Information Services L.L.C-FZ'
+  email = 'musetrendytoy@gmail.com'
+  phone = '+971 55 567 1672'
+  whatsapp = '+971555671672'
+  instagram = '@musetrendytoy'
+  locale = 'Dubai, UAE'
+
+[languages]
+  [languages.en]
+    weight = 1
+    languageName = 'English'
+    contentDir = 'content/en'
+    [languages.en.params]
+      description = 'Premium designer toys, collectibles, and corporate gifts in Dubai.'
+  [languages.ar]
+    weight = 2
+    languageName = 'العربية'
+    languageDirection = 'rtl'
+    contentDir = 'content/ar'
+    [languages.ar.params]
+      description = 'ألعاب مصممين فاخرة وهدايا مؤسسية في دبي.'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']
+
+[sitemap]
+  changeFreq = 'weekly'
+  priority = 0.5
+  filename = 'sitemap.xml'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[permalinks]
+  blog = '/blog/:slug/'
+  products = '/products/:slug/'

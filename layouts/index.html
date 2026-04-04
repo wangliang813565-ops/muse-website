@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="content">
+  {{ .Content }}
+  {{ $blogs := where .Site.RegularPages "Section" "blog" }}
+  {{ if $blogs }}
+  <h2>Latest from the Blog</h2>
+  <div class="blog-list">
+    {{ range first 5 $blogs.ByDate.Reverse }}
+    <article>
+      <div class="meta">{{ .Date.Format "January 2, 2006" }}</div>
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Description | default .Summary }}</p>
+    </article>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}

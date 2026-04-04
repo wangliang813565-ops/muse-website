@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang | default "en" }}" {{ if eq .Lang "ar" }}dir="rtl"{{ end }}>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+  {{ partial "schema-org.html" . }}
+  <style>
+    :root {
+      --gold: #C4A265;
+      --gold-light: #E8D5B5;
+      --brown-dark: #3A3028;
+      --brown-warm: #7A6B5A;
+      --cream: #FAF7F2;
+      --cream-dark: #F0E8DD;
+      --black: #1A1A1A;
+      --white: #FFFFFF;
+      --font-heading: 'Georgia', 'Times New Roman', serif;
+      --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --content-width: 760px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: var(--font-body);
+      color: var(--brown-dark);
+      background: var(--cream);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: var(--brown-warm); }
+
+    /* Header */
+    header {
+      background: var(--brown-dark);
+      color: var(--cream);
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .brand {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      letter-spacing: 6px;
+      color: var(--gold);
+    }
+    header nav a {
+      color: var(--cream);
+      margin-left: 2rem;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    header nav a:hover { color: var(--gold); }
+
+    /* Main */
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+    .content {
+      max-width: var(--content-width);
+      margin: 0 auto;
+    }
+
+    /* Typography */
+    h1 {
+      font-family: var(--font-heading);
+      font-size: 2.4rem;
+      color: var(--brown-dark);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      color: var(--brown-dark);
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--gold-light);
+    }
+    h3 {
+      font-size: 1.2rem;
+      color: var(--brown-warm);
+      margin: 2rem 0 0.8rem;
+    }
+    p { margin-bottom: 1.2rem; }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    ul, ol { margin-bottom: 1.2rem; padding-left: 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    blockquote {
+      border-left: 3px solid var(--gold);
+      padding: 0.8rem 1.2rem;
+      margin: 1.5rem 0;
+      background: var(--cream-dark);
+      font-style: italic;
+    }
+
+    /* Blog list */
+    .blog-list article {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--cream-dark);
+    }
+    .blog-list article h3 { margin-top: 0; }
+    .blog-list .meta {
+      color: var(--brown-warm);
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* CTA */
+    .cta {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      padding: 0.8rem 2rem;
+      border-radius: 3px;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 1rem;
+    }
+    .cta:hover { background: var(--brown-warm); color: var(--white); }
+
+    /* Footer */
+    footer {
+      background: var(--brown-dark);
+      color: var(--brown-warm);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      margin-top: 4rem;
+    }
+    footer a { color: var(--gold-light); }
+    .gold-line {
+      width: 60px;
+      height: 2px;
+      background: var(--gold);
+      margin: 1rem auto;
+    }
+
+    /* RTL */
+    [dir="rtl"] header nav a { margin-left: 0; margin-right: 2rem; }
+    [dir="rtl"] blockquote { border-left: none; border-right: 3px solid var(--gold); }
+    [dir="rtl"] ul, [dir="rtl"] ol { padding-left: 0; padding-right: 1.5rem; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header { flex-direction: column; gap: 1rem; }
+      header nav a { margin: 0 1rem; }
+      h1 { font-size: 1.8rem; }
+      main { padding: 2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="{{ .Site.BaseURL }}" class="brand">MUSE</a>
+    <nav>
+      <a href="{{ "blog/" | relLangURL }}">Blog</a>
+      <a href="{{ "products/" | relLangURL }}">Products</a>
+      {{ if eq .Lang "en" }}
+        <a href="{{ .Site.BaseURL }}ar/">العربية</a>
+      {{ else }}
+        <a href="{{ .Site.BaseURL }}">English</a>
+      {{ end }}
+    </nav>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    <div class="gold-line"></div>
+    <p>&copy; {{ now.Year }} {{ .Site.Params.company }}. Dubai, UAE.</p>
+    <p>
+      <a href="https://wa.me/{{ .Site.Params.whatsapp }}">WhatsApp</a> &middot;
+      <a href="https://instagram.com/musetrendytoy">Instagram</a> &middot;
+      <a href="mailto:{{ .Site.Params.email }}">Email</a>
+    </p>
+  </footer>
+</body>
+</html>
