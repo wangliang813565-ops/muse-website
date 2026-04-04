@@ -50,18 +50,11 @@
   "@type": "Product",
   "name": "{{ .Title }}",
   "description": "{{ .Description }}",
+  {{ with .Params.image }}"image": "{{ . }}",{{ end }}
   "brand": {
     "@type": "Brand",
     "name": "{{ .Site.Params.brand }}"
   }
-  {{ with .Params.price }},
-  "offers": {
-    "@type": "Offer",
-    "price": "{{ . }}",
-    "priceCurrency": "AED",
-    "availability": "https://schema.org/InStock"
-  }
-  {{ end }}
 }
 </script>
 {{ end }}
