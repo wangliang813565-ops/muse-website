@@ -22,49 +22,63 @@
     line-height: 1.8;
   }
 
-  /* Product categories */
-  .custom-categories {
+  /* Full-width product overview */
+  .products-overview {
+    max-width: 960px;
+    margin: 0 auto 1rem;
+    padding: 0 2rem;
+  }
+  .products-overview img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(58,48,40,0.08);
+  }
+  .products-overview-caption {
+    text-align: center;
+    color: var(--greige);
+    font-size: 0.85rem;
+    margin-top: 0.8rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+  }
+
+  /* Merch grid */
+  .merch-showcase {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
     max-width: var(--max-width);
     margin: 0 auto 3rem;
     padding: 0 2rem;
   }
-  .cat-card {
+  .merch-item {
     background: var(--white);
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
-  .cat-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(58,48,40,0.1);
+  .merch-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 36px rgba(58,48,40,0.12);
   }
-  .cat-card img {
+  .merch-item img {
     width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: contain;
-    background: var(--pearl);
-    padding: 1rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
   }
-  .cat-card-body {
-    padding: 1.2rem 1.5rem 1.5rem;
+  .merch-item .merch-label {
+    padding: 0.6rem 0.8rem;
+    text-align: center;
   }
-  .cat-card-body h3 {
+  .merch-item .merch-name {
     font-family: var(--font-heading);
-    font-size: 1.05rem;
+    font-size: 0.85rem;
     color: var(--taupe);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.15rem;
   }
-  .cat-card-body p {
-    font-size: 0.88rem;
-    color: var(--greige);
-    line-height: 1.6;
-    margin-bottom: 0.6rem;
-  }
-  .cat-card-body .moq {
-    font-size: 0.78rem;
+  .merch-item .merch-moq {
+    font-size: 0.72rem;
     color: var(--sand);
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -76,10 +90,7 @@
     margin: 0 auto 3rem;
     padding: 0 2rem;
   }
-  .spec-table table {
-    width: 100%;
-    border-collapse: collapse;
-  }
+  .spec-table table { width: 100%; border-collapse: collapse; }
   .spec-table th {
     text-align: left;
     font-family: var(--font-heading);
@@ -112,25 +123,17 @@
     background: var(--cream-dark);
     border-radius: 8px;
   }
-  .use-case .uc-icon {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
-    display: block;
-  }
+  .use-case .uc-icon { font-size: 2rem; margin-bottom: 0.8rem; display: block; }
   .use-case h3 {
     font-family: var(--font-heading);
     font-size: 0.95rem;
     color: var(--taupe);
     margin-bottom: 0.5rem;
   }
-  .use-case p {
-    font-size: 0.82rem;
-    color: var(--greige);
-    line-height: 1.5;
-  }
+  .use-case p { font-size: 0.82rem; color: var(--greige); line-height: 1.5; }
 
   @media (max-width: 900px) {
-    .custom-categories { grid-template-columns: 1fr; }
+    .merch-showcase { grid-template-columns: repeat(2, 1fr); }
     .use-cases { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 768px) {
@@ -144,32 +147,70 @@
   <p>From concept to finished product — we turn your brand, mascot, or original character into a full line of designer toys and collectible merchandise, manufactured and shipped from Dubai.</p>
 </div>
 
-<!-- Product Categories -->
+<!-- Products Overview -->
 <h2 class="section-title">What We Make</h2>
 <div class="section-line"></div>
-<div class="custom-categories">
-  <div class="cat-card">
-    <img src="{{ "images/hala/mockups/mockup_blindbox.png" | relURL }}" alt="Custom Blind Box" loading="lazy">
-    <div class="cat-card-body">
-      <h3>Blind Box Figures</h3>
-      <p>PVC or vinyl figures, 6-12 designs per series. Individually boxed with collectible inserts and hidden chase editions.</p>
-      <div class="moq">MOQ: 500 per design</div>
+<div class="products-overview">
+  <img src="{{ "images/hala/merch/products-grid.jpg" | relURL }}" alt="Hala IP Merchandise — Full Product Line" loading="lazy">
+  <div class="products-overview-caption">Power bank, phone stand, tumbler, tote bag, wireless charger, notebook, plush keychain, ceramic mug</div>
+</div>
+
+<!-- Individual Products -->
+<div class="merch-showcase">
+  <div class="merch-item">
+    <img src="{{ "images/hala/merch/keychain.jpg" | relURL }}" alt="Hala Plush Keychain" loading="lazy">
+    <div class="merch-label">
+      <div class="merch-name">Plush Keychain</div>
+      <div class="merch-moq">MOQ: 500 pcs</div>
     </div>
   </div>
-  <div class="cat-card">
-    <img src="{{ "images/hala/mockups/mockup_plush.png" | relURL }}" alt="Custom Plush" loading="lazy">
-    <div class="cat-card-body">
-      <h3>Plush Toys & Keychains</h3>
-      <p>Soft plush in custom sizes — from 8cm keychain danglers to 30cm collectible plush. Crystal super-soft or classic cotton fill.</p>
-      <div class="moq">MOQ: 300 per style</div>
+  <div class="merch-item">
+    <img src="{{ "images/hala/merch/tote-bag.jpg" | relURL }}" alt="Hala Canvas Tote Bag" loading="lazy">
+    <div class="merch-label">
+      <div class="merch-name">Canvas Tote Bag</div>
+      <div class="merch-moq">MOQ: 100 pcs</div>
     </div>
   </div>
-  <div class="cat-card">
-    <img src="{{ "images/hala/mockups/mockup_totebag.png" | relURL }}" alt="Custom Merchandise" loading="lazy">
-    <div class="cat-card-body">
-      <h3>Lifestyle Merchandise</h3>
-      <p>Phone cases, tote bags, sticker sets, enamel pins, mugs, and more. Full printing and embroidery customization.</p>
-      <div class="moq">MOQ: 100 per item</div>
+  <div class="merch-item">
+    <img src="{{ "images/hala/merch/mug.jpg" | relURL }}" alt="Hala Ceramic Mug" loading="lazy">
+    <div class="merch-label">
+      <div class="merch-name">Ceramic Mug</div>
+      <div class="merch-moq">MOQ: 200 pcs</div>
+    </div>
+  </div>
+  <div class="merch-item">
+    <img src="{{ "images/hala/merch/tumbler.jpg" | relURL }}" alt="Hala Insulated Tumbler" loading="lazy">
+    <div class="merch-label">
+      <div class="merch-name">Insulated Tumbler</div>
+      <div class="merch-moq">MOQ: 200 pcs</div>
+    </div>
+  </div>
+  <div class="merch-item">
+    <img src="{{ "images/hala/merch/phone-stand.jpg" | relURL }}" alt="Hala Phone Stand" loading="lazy">
+    <div class="merch-label">
+      <div class="merch-name">Phone Stand</div>
+      <div class="merch-moq">MOQ: 300 pcs</div>
+    </div>
+  </div>
+  <div class="merch-item">
+    <img src="{{ "images/hala/merch/wireless-charger.jpg" | relURL }}" alt="Hala Wireless Charger" loading="lazy">
+    <div class="merch-label">
+      <div class="merch-name">Wireless Charger</div>
+      <div class="merch-moq">MOQ: 200 pcs</div>
+    </div>
+  </div>
+  <div class="merch-item">
+    <img src="{{ "images/hala/merch/notebook.jpg" | relURL }}" alt="Hala Notebook" loading="lazy">
+    <div class="merch-label">
+      <div class="merch-name">Hardcover Notebook</div>
+      <div class="merch-moq">MOQ: 200 pcs</div>
+    </div>
+  </div>
+  <div class="merch-item">
+    <img src="{{ "images/hala/merch/fridge-magnet.png" | relURL }}" alt="Hala Fridge Magnet" loading="lazy">
+    <div class="merch-label">
+      <div class="merch-name">Fridge Magnet</div>
+      <div class="merch-moq">MOQ: 500 pcs</div>
     </div>
   </div>
 </div>
@@ -188,54 +229,15 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Blind Box (PVC)</td>
-        <td>PVC / ABS</td>
-        <td>45-60 days</td>
-        <td>500 pcs/design</td>
-      </tr>
-      <tr>
-        <td>Vinyl Figure</td>
-        <td>Soft vinyl</td>
-        <td>50-70 days</td>
-        <td>300 pcs</td>
-      </tr>
-      <tr>
-        <td>Plush Toy</td>
-        <td>Crystal super-soft</td>
-        <td>30-45 days</td>
-        <td>300 pcs/style</td>
-      </tr>
-      <tr>
-        <td>Plush Keychain</td>
-        <td>Crystal super-soft</td>
-        <td>25-35 days</td>
-        <td>500 pcs</td>
-      </tr>
-      <tr>
-        <td>Phone Case</td>
-        <td>TPU / PC</td>
-        <td>15-20 days</td>
-        <td>100 pcs</td>
-      </tr>
-      <tr>
-        <td>Canvas Tote</td>
-        <td>12oz cotton canvas</td>
-        <td>15-20 days</td>
-        <td>100 pcs</td>
-      </tr>
-      <tr>
-        <td>Sticker Set</td>
-        <td>Waterproof PVC</td>
-        <td>7-10 days</td>
-        <td>200 sets</td>
-      </tr>
-      <tr>
-        <td>Enamel Pin</td>
-        <td>Zinc alloy + enamel</td>
-        <td>20-30 days</td>
-        <td>200 pcs</td>
-      </tr>
+      <tr><td>Blind Box (PVC)</td><td>PVC / ABS</td><td>45-60 days</td><td>500 pcs/design</td></tr>
+      <tr><td>Plush Keychain</td><td>Crystal super-soft</td><td>25-35 days</td><td>500 pcs</td></tr>
+      <tr><td>Canvas Tote</td><td>12oz cotton canvas</td><td>15-20 days</td><td>100 pcs</td></tr>
+      <tr><td>Ceramic Mug</td><td>Porcelain / sublimation</td><td>15-20 days</td><td>200 pcs</td></tr>
+      <tr><td>Insulated Tumbler</td><td>Stainless steel</td><td>20-25 days</td><td>200 pcs</td></tr>
+      <tr><td>Phone Stand</td><td>ABS / PVC</td><td>30-40 days</td><td>300 pcs</td></tr>
+      <tr><td>Wireless Charger</td><td>ABS + Qi module</td><td>25-35 days</td><td>200 pcs</td></tr>
+      <tr><td>Hardcover Notebook</td><td>Art paper + PU cover</td><td>15-20 days</td><td>200 pcs</td></tr>
+      <tr><td>Fridge Magnet</td><td>PVC / rubber</td><td>15-20 days</td><td>500 pcs</td></tr>
     </tbody>
   </table>
 </div>
@@ -266,30 +268,16 @@
   </div>
 </div>
 
-<!-- Process -->
-<h2 class="section-title">Our Process</h2>
-<div class="section-line"></div>
-<div style="max-width: 800px; margin: 0 auto 3rem; padding: 0 2rem;">
-  <div style="display: grid; grid-template-columns: 40px 1fr; gap: 0.8rem 1.2rem; align-items: start;">
-    <span class="step-num" style="display:inline-block; width:36px; height:36px; line-height:36px; border-radius:50%; background:var(--sand); color:var(--white); font-family:var(--font-heading); font-size:1rem; text-align:center;">1</span>
-    <div><strong style="color:var(--taupe);">Share Your Vision</strong><br><span style="color:var(--greige); font-size:0.9rem;">Send us your brand guidelines, character art, or just an idea. We'll take it from there.</span></div>
-
-    <span class="step-num" style="display:inline-block; width:36px; height:36px; line-height:36px; border-radius:50%; background:var(--sand); color:var(--white); font-family:var(--font-heading); font-size:1rem; text-align:center;">2</span>
-    <div><strong style="color:var(--taupe);">Design & Sampling</strong><br><span style="color:var(--greige); font-size:0.9rem;">2D concept art, 3D modeling, and physical sample production. Revisions until you approve.</span></div>
-
-    <span class="step-num" style="display:inline-block; width:36px; height:36px; line-height:36px; border-radius:50%; background:var(--sand); color:var(--white); font-family:var(--font-heading); font-size:1rem; text-align:center;">3</span>
-    <div><strong style="color:var(--taupe);">Mass Production</strong><br><span style="color:var(--greige); font-size:0.9rem;">Factory production with QC inspection. Shipped to our Dubai warehouse or directly to you.</span></div>
-
-    <span class="step-num" style="display:inline-block; width:36px; height:36px; line-height:36px; border-radius:50%; background:var(--sand); color:var(--white); font-family:var(--font-heading); font-size:1rem; text-align:center;">4</span>
-    <div><strong style="color:var(--taupe);">Delivery & Support</strong><br><span style="color:var(--greige); font-size:0.9rem;">GCC-wide logistics from Dubai. Optional: retail placement, social media marketing, and reorder management.</span></div>
+<!-- CTA with Phantom Banner -->
+<div style="position:relative; width:100%; min-height:400px; overflow:hidden; margin-top:2rem;">
+  <img src="{{ "images/hala/phantom-banner.png" | relURL }}" alt="" style="width:100%; height:100%; object-fit:cover; object-position:left center; position:absolute; top:0; left:0;" loading="lazy">
+  <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:linear-gradient(to right, rgba(10,10,10,0.2) 0%, rgba(10,10,10,0.6) 45%, rgba(10,10,10,0.85) 100%); display:flex; align-items:center; justify-content:flex-end; padding:0 8%;">
+    <div style="max-width:420px; text-align:right;">
+      <h2 style="font-family:var(--font-heading); font-size:2rem; color:var(--sand); margin-bottom:1rem; letter-spacing:2px; border:none; padding:0;">Ready to Create?</h2>
+      <p style="color:var(--blush); font-size:1rem; line-height:1.8; margin-bottom:1.5rem;">From a napkin sketch to 10,000 units on shelves — we make it happen. Tell us what you need.</p>
+      <a href="https://wa.me/971555671672" class="cta">Start Your Project</a>
+    </div>
   </div>
-</div>
-
-<!-- CTA -->
-<div class="about-banner">
-  <h2>Ready to Create?</h2>
-  <p>From a napkin sketch to 10,000 units on shelves — we make it happen. Tell us what you need.</p>
-  <a href="https://wa.me/971555671672" class="cta">Start Your Project</a>
 </div>
 
 {{ end }}
