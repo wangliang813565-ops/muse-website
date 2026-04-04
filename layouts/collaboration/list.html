@@ -22,45 +22,6 @@
     line-height: 1.8;
   }
 
-  /* Process */
-  .process-steps {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    max-width: var(--max-width);
-    margin: 0 auto 3rem;
-    padding: 0 2rem;
-  }
-  .process-step {
-    text-align: center;
-    padding: 2rem 1.2rem;
-    position: relative;
-  }
-  .step-num {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
-    border-radius: 50%;
-    background: var(--sand);
-    color: var(--white);
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  .process-step h3 {
-    font-family: var(--font-heading);
-    font-size: 1rem;
-    color: var(--taupe);
-    margin-bottom: 0.6rem;
-    letter-spacing: 0.5px;
-  }
-  .process-step p {
-    font-size: 0.88rem;
-    color: var(--greige);
-    line-height: 1.6;
-  }
-
   /* Collab models */
   .collab-models {
     display: grid;
@@ -82,58 +43,177 @@
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(58,48,40,0.08);
   }
-  .collab-model-card .icon {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    display: block;
-  }
+  .collab-model-card .icon { font-size: 2.2rem; margin-bottom: 1rem; display: block; }
   .collab-model-card h3 {
     font-family: var(--font-heading);
     font-size: 1.1rem;
     color: var(--taupe);
     margin-bottom: 0.8rem;
   }
-  .collab-model-card p {
-    font-size: 0.88rem;
+  .collab-model-card p { font-size: 0.88rem; color: var(--greige); line-height: 1.6; }
+
+  /* ── Case Study: Spotlight hero ── */
+  .case-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: var(--max-width);
+    margin: 0 auto 2.5rem;
+    padding: 0 2rem;
+    align-items: center;
+  }
+  .case-intro img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 12px 40px rgba(58,48,40,0.12);
+  }
+  .case-intro-text h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--taupe);
+    margin-bottom: 1rem;
+    border: none;
+    padding: 0;
+  }
+  .case-intro-text p {
     color: var(--greige);
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 0.95rem;
+  }
+  .case-intro-text .badge {
+    display: inline-block;
+    background: var(--sand);
+    color: var(--white);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
   }
 
-  /* Showcase */
-  .showcase-grid {
+  /* ── Horizontal scroll carousel ── */
+  .char-carousel-wrap {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 0 3rem;
+    position: relative;
+  }
+  .char-carousel-wrap::before,
+  .char-carousel-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 60px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .char-carousel-wrap::before {
+    left: 0;
+    background: linear-gradient(to right, var(--pearl), transparent);
+  }
+  .char-carousel-wrap::after {
+    right: 0;
+    background: linear-gradient(to left, var(--pearl), transparent);
+  }
+  .char-carousel {
+    display: flex;
+    gap: 1.2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem 2rem 1.5rem;
+    scrollbar-width: none;
+  }
+  .char-carousel::-webkit-scrollbar { display: none; }
+  .char-card {
+    flex: 0 0 220px;
+    scroll-snap-align: start;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: default;
+    position: relative;
+  }
+  .char-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 16px 48px rgba(58,48,40,0.15);
+  }
+  .char-card img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    display: block;
+  }
+  .char-card .char-info {
+    padding: 0.8rem 1rem;
+    text-align: center;
+  }
+  .char-card .char-name {
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    color: var(--taupe);
+    letter-spacing: 0.5px;
+    margin-bottom: 0.2rem;
+  }
+  .char-card .char-role {
+    font-size: 0.75rem;
+    color: var(--greige);
+    letter-spacing: 0.3px;
+  }
+
+  /* Scroll hint */
+  .scroll-hint {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--greige);
+    margin: -1.5rem 0 2rem;
+    letter-spacing: 1px;
+  }
+
+  /* ── Process ── */
+  .process-steps {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.2rem;
+    gap: 2rem;
     max-width: var(--max-width);
     margin: 0 auto 3rem;
     padding: 0 2rem;
   }
-  .showcase-card {
-    background: var(--white);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s;
-  }
-  .showcase-card:hover { transform: translateY(-3px); }
-  .showcase-card img {
-    width: 100%;
-    aspect-ratio: 3/4;
-    object-fit: cover;
-  }
-  .showcase-card .label {
-    padding: 0.6rem 0.8rem;
-    font-size: 0.8rem;
-    color: var(--greige);
+  .process-step {
     text-align: center;
+    padding: 2rem 1.2rem;
   }
+  .step-num {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 50%;
+    background: var(--sand);
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .process-step h3 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--taupe);
+    margin-bottom: 0.6rem;
+  }
+  .process-step p { font-size: 0.88rem; color: var(--greige); line-height: 1.6; }
 
   @media (max-width: 900px) {
-    .process-steps { grid-template-columns: repeat(2, 1fr); }
     .collab-models { grid-template-columns: 1fr; }
-    .showcase-grid { grid-template-columns: repeat(2, 1fr); }
+    .process-steps { grid-template-columns: repeat(2, 1fr); }
+    .case-intro { grid-template-columns: 1fr; gap: 1.5rem; }
+    .char-card { flex: 0 0 180px; }
   }
   @media (max-width: 768px) {
     .collab-hero h1 { font-size: 2rem; }
+    .char-card { flex: 0 0 160px; }
   }
 </style>
 
@@ -164,46 +244,97 @@
   </div>
 </div>
 
-<!-- Case Study: Chocolate Collab -->
-<h2 class="section-title">Case Study: Chocolate Collection</h2>
+<!-- Case Study: Chocolate Collection -->
+<h2 class="section-title">Case Study: Dama Chocolate Collection</h2>
 <div class="section-line"></div>
-<div style="max-width: 720px; margin: 0 auto 2rem; padding: 0 2rem; text-align: center;">
-  <p style="color: var(--greige); line-height: 1.8;">Hala reimagined as a cast of chocolate artisans — from Cacao Priest to Pastry Queen. Each character tells a story at the intersection of Gulf heritage and global confectionery craft.</p>
-</div>
-<div class="showcase-grid">
-  <div class="showcase-card">
-    <img src="{{ "images/hala/collab/hala-chocolatier-concept.png" | relURL }}" alt="Hala — Chocolatier" loading="lazy">
-    <div class="label">The Chocolatier</div>
-  </div>
-  <div class="showcase-card">
-    <img src="{{ "images/hala/collab/hala-cacao-priest.png" | relURL }}" alt="Hala — Cacao Priest" loading="lazy">
-    <div class="label">Cacao Priest</div>
-  </div>
-  <div class="showcase-card">
-    <img src="{{ "images/hala/collab/hala-pastry-queen.png" | relURL }}" alt="Hala — Pastry Queen" loading="lazy">
-    <div class="label">Pastry Queen</div>
-  </div>
-  <div class="showcase-card">
-    <img src="{{ "images/hala/collab/hala-connoisseur-v2.png" | relURL }}" alt="Hala — Connoisseur" loading="lazy">
-    <div class="label">The Connoisseur</div>
-  </div>
-  <div class="showcase-card">
-    <img src="{{ "images/hala/collab/hala-grandmaster-v2.png" | relURL }}" alt="Hala — Grand Master" loading="lazy">
-    <div class="label">Grand Master</div>
-  </div>
-  <div class="showcase-card">
-    <img src="{{ "images/hala/collab/hala-merchant-v2.png" | relURL }}" alt="Hala — Merchant" loading="lazy">
-    <div class="label">The Merchant</div>
-  </div>
-  <div class="showcase-card">
-    <img src="{{ "images/hala/collab/hala-willy-v2.png" | relURL }}" alt="Hala — Willy" loading="lazy">
-    <div class="label">Willy</div>
-  </div>
-  <div class="showcase-card">
-    <img src="{{ "images/hala/collab/hala-grandmaster.png" | relURL }}" alt="Hala — Grand Master V1" loading="lazy">
-    <div class="label">Grand Master — Alt</div>
+
+<!-- Spotlight: hero image + text -->
+<div class="case-intro">
+  <img src="{{ "images/hala/collab/hala-cacao-master.png" | relURL }}" alt="Hala x Dama — Cacao Master" loading="lazy">
+  <div class="case-intro-text">
+    <span class="badge">Blind Box Series</span>
+    <h3>Hala x Dama Chocolate</h3>
+    <p>A premium blind box collection designed for Dama Chocolate. Hala is reimagined as a cast of chocolate artisans — each character tells a story at the intersection of Gulf heritage and global confectionery craft.</p>
+    <p>10 unique characters. From the regal Cacao Master to the mysterious Chocolate Phantom, every figure is a collectible piece of the chocolate universe.</p>
   </div>
 </div>
+
+<!-- Character Carousel -->
+<div class="char-carousel-wrap">
+  <div class="char-carousel">
+    <div class="char-card">
+      <img src="{{ "images/hala/collab/hala-cacao-master.png" | relURL }}" alt="Cacao Master" loading="lazy">
+      <div class="char-info">
+        <div class="char-name">Cacao Master</div>
+        <div class="char-role">The guild leader</div>
+      </div>
+    </div>
+    <div class="char-card">
+      <img src="{{ "images/hala/collab/hala-cacao-cape.png" | relURL }}" alt="Cacao Cape" loading="lazy">
+      <div class="char-info">
+        <div class="char-name">Cacao Cape</div>
+        <div class="char-role">The elegant guardian</div>
+      </div>
+    </div>
+    <div class="char-card">
+      <img src="{{ "images/hala/collab/hala-chocolate-phantom.png" | relURL }}" alt="Chocolate Phantom" loading="lazy">
+      <div class="char-info">
+        <div class="char-name">Chocolate Phantom</div>
+        <div class="char-role">The masked mystery</div>
+      </div>
+    </div>
+    <div class="char-card">
+      <img src="{{ "images/hala/collab/hala-chocolatier-v2.png" | relURL }}" alt="The Chocolatier" loading="lazy">
+      <div class="char-info">
+        <div class="char-name">The Chocolatier</div>
+        <div class="char-role">Master of pralines</div>
+      </div>
+    </div>
+    <div class="char-card">
+      <img src="{{ "images/hala/collab/hala-connoisseur-v3.png" | relURL }}" alt="The Connoisseur" loading="lazy">
+      <div class="char-info">
+        <div class="char-name">The Connoisseur</div>
+        <div class="char-role">The refined taster</div>
+      </div>
+    </div>
+    <div class="char-card">
+      <img src="{{ "images/hala/collab/hala-cacao-priest.png" | relURL }}" alt="Cacao Priest" loading="lazy">
+      <div class="char-info">
+        <div class="char-name">Cacao Priest</div>
+        <div class="char-role">Keeper of ancient beans</div>
+      </div>
+    </div>
+    <div class="char-card">
+      <img src="{{ "images/hala/collab/hala-pastry-queen.png" | relURL }}" alt="Pastry Queen" loading="lazy">
+      <div class="char-info">
+        <div class="char-name">Pastry Queen</div>
+        <div class="char-role">Ruler of sweet kingdoms</div>
+      </div>
+    </div>
+    <div class="char-card">
+      <img src="{{ "images/hala/collab/hala-grandmaster-v2.png" | relURL }}" alt="Grand Master" loading="lazy">
+      <div class="char-info">
+        <div class="char-name">Grand Master</div>
+        <div class="char-role">The golden sovereign</div>
+      </div>
+    </div>
+    <div class="char-card">
+      <img src="{{ "images/hala/collab/hala-merchant-v2.png" | relURL }}" alt="The Merchant" loading="lazy">
+      <div class="char-info">
+        <div class="char-name">The Merchant</div>
+        <div class="char-role">Trader of rare cacao</div>
+      </div>
+    </div>
+    <div class="char-card">
+      <img src="{{ "images/hala/collab/hala-willy-v2.png" | relURL }}" alt="Willy" loading="lazy">
+      <div class="char-info">
+        <div class="char-name">Willy</div>
+        <div class="char-role">The dreamer</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="scroll-hint">&#8592; SWIPE TO EXPLORE ALL CHARACTERS &#8594;</div>
 
 <!-- Process -->
 <h2 class="section-title">How We Work</h2>
