@@ -30,14 +30,15 @@
   </div>
 </div>
 
-<div class="content">
-  {{ .Content }}
-  {{ range .Pages.ByDate.Reverse }}
-  <article>
-    <div class="meta">{{ .Date.Format "January 2, 2006" }} {{ with .Params.categories }}· {{ delimit . ", " }}{{ end }}</div>
-    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-    <p>{{ .Description | default .Summary }}</p>
-  </article>
+<div class="product-grid" style="max-width:var(--max-width); margin:2rem auto; padding:0 1rem;">
+  {{ range .Pages }}
+  <a href="{{ .Permalink }}" class="product-card" style="text-decoration:none;">
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+    {{ end }}
+    <div class="product-name">{{ .Title }}</div>
+    {{ with .Params.name_zh }}<div style="font-size:0.75rem; color:var(--greige); text-align:center; padding:0 0.8rem 0.6rem;">{{ . }}</div>{{ end }}
+  </a>
   {{ end }}
 </div>
 

@@ -1,0 +1,92 @@
+{{ define "main" }}
+<style>
+  .product-detail {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .product-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(58,48,40,0.1);
+  }
+  .product-info h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--taupe);
+    margin-bottom: 0.5rem;
+    border: none;
+    padding: 0;
+  }
+  .product-info .name-zh {
+    font-size: 1rem;
+    color: var(--greige);
+    margin-bottom: 1.5rem;
+  }
+  .product-info .price {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--gold-matte);
+    margin-bottom: 0.3rem;
+  }
+  .product-info .price-note {
+    font-size: 0.85rem;
+    color: var(--greige);
+    margin-bottom: 1.5rem;
+  }
+  .product-info .category-badge {
+    display: inline-block;
+    background: var(--cream-dark);
+    color: var(--greige);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .product-info .description {
+    color: var(--greige);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  .product-cta {
+    display: inline-block;
+    background: var(--sand);
+    color: var(--white);
+    padding: 0.8rem 2.5rem;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .product-cta:hover { background: var(--gold-matte); color: var(--white); }
+
+  @media (max-width: 768px) {
+    .product-detail { grid-template-columns: 1fr; gap: 2rem; padding: 2rem 1.2rem; }
+    .product-info h1 { font-size: 1.5rem; }
+  }
+</style>
+
+<div class="product-detail">
+  <div class="product-image">
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+    {{ end }}
+  </div>
+  <div class="product-info">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.name_zh }}<div class="name-zh">{{ . }}</div>{{ end }}
+    {{ with .Params.category }}<span class="category-badge">{{ . }}</span>{{ end }}
+    {{ with .Params.price }}<div class="price">AED {{ . }}</div>{{ end }}
+    {{ with .Params.price_note }}<div class="price-note">{{ . }}</div>{{ end }}
+    <div class="description">{{ .Content }}</div>
+    <a href="https://wa.me/971555671672?text=Hi%2C%20I'm%20interested%20in%20{{ .Title | urlquery }}" class="product-cta">Enquire on WhatsApp</a>
+  </div>
+</div>
+
+{{ end }}
