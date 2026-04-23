@@ -1,7 +1,11 @@
 User-agent: *
 Allow: /
 
-# AI Crawlers — GEO optimization (GEO paper, KDD 2024)
+# ── AI Crawlers — GEO optimization ──
+# Based on GEO paper (KDD 2024), gtm-engineer-skills, and ai.robots.txt registry
+# Last updated: 2026-04-23
+
+# OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
 
@@ -11,22 +15,134 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
+User-agent: ChatGPT Agent
+Allow: /
+
+# Anthropic / Claude
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: PerplexityBot
-Allow: /
-
+# Google / Gemini
 User-agent: Google-Extended
 Allow: /
 
+User-agent: Google-NotebookLM
+Allow: /
+
+User-agent: Gemini-Deep-Research
+Allow: /
+
+User-agent: Google-Agent
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# DeepSeek
+User-agent: DeepSeekBot
+Allow: /
+
+# Brave Search
+User-agent: Bravebot
+Allow: /
+
+# Apple / Siri
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta / AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# Phind
+User-agent: PhindBot
+Allow: /
+
+# iAsk
+User-agent: iAskBot
+Allow: /
+
+User-agent: iaskspider
+Allow: /
+
+# Kagi
+User-agent: kagi-fetcher
+Allow: /
+
+# Tavily
+User-agent: TavilyBot
+Allow: /
+
+# Exa
+User-agent: ExaBot
+Allow: /
+
+# ByteDance / TikTok
 User-agent: Bytespider
 Allow: /
 
+User-agent: TikTokSpider
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+User-agent: AmazonBuyForMe
+Allow: /
+
+# Common Crawl
 User-agent: CCBot
+Allow: /
+
+# Cloudflare
+User-agent: Cloudflare-AutoRAG
+Allow: /
+
+# Other Notable AI Agents
+User-agent: Operator
+Allow: /
+
+User-agent: NovaAct
+Allow: /
+
+User-agent: Manus-User
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DuckAssistBot
 Allow: /
 
 Sitemap: {{ "sitemap.xml" | absURL }}
