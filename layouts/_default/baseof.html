@@ -6,6 +6,11 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="canonical" href="{{ .Permalink }}">
+  {{/* GEO: article time signals for AI freshness ranking */}}
+  {{ if .IsPage }}
+  {{ with .Date }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+  {{ with .Lastmod }}<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+  {{ end }}
   {{/* C5: hreflang tags for multilingual SEO */}}
   {{ if .IsTranslated }}
     {{ range .Translations }}
@@ -486,6 +491,7 @@
       <a href="{{ "custom/" | relLangURL }}">Custom</a>
       <a href="{{ "products/" | relLangURL }}">Products</a>
       <a href="{{ "blog/" | relLangURL }}">Blog</a>
+      <a href="{{ "about/" | relLangURL }}">About</a>
       {{ if eq .Lang "en" }}
         <a href="{{ .Site.BaseURL }}ar/">العربية</a>
       {{ else }}

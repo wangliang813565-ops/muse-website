@@ -2,7 +2,7 @@
 title: "DaiXiaoDai Animal Carnival - White Rabbit"
 slug: "dxd-acp-wrabbit"
 name_zh: "呆小呆动物狂欢派对-大白兔"
-description: "呆小呆动物狂欢派对系列毛绒搪胶盲盒公仔"
+description: "Part of the DaiXiaoDai Animal Carnival blind box series — a soft vinyl and plush collectible figure. Each piece is a surprise character from the Animal Carnival collection. Dubai ready stock, 2-5 day delivery across GCC."
 category: "Blind Box"
 price: ""
 price_note: ""
@@ -10,4 +10,4 @@ image: "https://wangliang813565-ops.github.io/muse-tiktok-media/products/daixiao
 sku: "DXD-ACP-WRABBIT"
 ---
 
-呆小呆动物狂欢派对系列毛绒搪胶盲盒公仔
+DaiXiaoDai Animal Carnival blind box figure featuring the White Rabbit character. Soft vinyl and plush collectible, approximately 8-10cm. Detailed design with premium finish. Part of the Animal Carnival blind box series — each box is a surprise. Dubai ready stock with 2-5 day delivery across UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman.

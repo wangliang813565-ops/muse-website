@@ -12,9 +12,73 @@
     "@type": "PostalAddress",
     "addressLocality": "Dubai",
     "addressCountry": "AE"
+  },
+  "sameAs": [
+    "https://instagram.com/musetrendytoy",
+    "https://wa.me/971555671672"
+  ]
+}
+</script>
+
+{{/* LocalBusiness Schema — GEO: local search visibility */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{ .Site.Params.brand }}",
+  "legalName": "{{ .Site.Params.company }}",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "{{ .Site.Params.phone }}",
+  "email": "{{ .Site.Params.email }}",
+  "description": "{{ .Site.Params.description }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dubai",
+    "addressRegion": "Dubai",
+    "addressCountry": "AE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "25.2048",
+    "longitude": "55.2708"
+  },
+  "areaServed": [
+    {"@type": "Country", "name": "United Arab Emirates"},
+    {"@type": "Country", "name": "Saudi Arabia"},
+    {"@type": "Country", "name": "Qatar"},
+    {"@type": "Country", "name": "Kuwait"},
+    {"@type": "Country", "name": "Bahrain"},
+    {"@type": "Country", "name": "Oman"}
+  ],
+  "priceRange": "$$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "sameAs": [
+    "https://instagram.com/musetrendytoy"
+  ]
+}
+</script>
+
+{{/* WebSite Schema with SearchAction — homepage only */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Params.brand }}",
+  "url": "{{ .Site.BaseURL }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ .Site.BaseURL }}blog/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
   }
 }
 </script>
+{{ end }}
 
 {{/* Article Schema — for blog posts */}}
 {{ if and (eq .Section "blog") .IsPage }}
@@ -54,6 +118,15 @@
   "brand": {
     "@type": "Brand",
     "name": "{{ .Site.Params.brand }}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {
+      "@type": "Organization",
+      "name": "{{ .Site.Params.brand }}"
+    }
   }
 }
 </script>

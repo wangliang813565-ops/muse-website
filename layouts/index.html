@@ -319,6 +319,20 @@
   <a href="https://wa.me/971555671672" class="cta">WhatsApp Us</a>
 </div>
 
+<!-- FAQ Section — GEO: +11% AI citation rate (SE Ranking 2025) -->
+{{ with .Params.faq }}
+<section style="max-width: var(--content-width); margin: 0 auto; padding: 3rem 2rem;">
+  <h2 class="section-title" style="margin-top: 0;">Frequently Asked Questions</h2>
+  <div class="section-line"></div>
+  {{ range . }}
+  <details style="margin-bottom: 1rem; border-bottom: 1px solid var(--cream-dark); padding-bottom: 1rem;">
+    <summary style="font-family: var(--font-heading); font-size: 1.05rem; color: var(--taupe); cursor: pointer; padding: 0.5rem 0;">{{ .q }}</summary>
+    <p style="color: var(--greige); line-height: 1.7; margin-top: 0.8rem; padding-left: 1rem;">{{ .a }}</p>
+  </details>
+  {{ end }}
+</section>
+{{ end }}
+
 <!-- Blog Section -->
 {{ $blogs := where .Site.RegularPages "Section" "blog" }}
 {{ if $blogs }}
