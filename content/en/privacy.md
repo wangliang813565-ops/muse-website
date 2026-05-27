@@ -1,12 +1,12 @@
 ---
 title: "Privacy Policy"
 description: "How MUSE Trendy Toy collects, uses, and protects your personal data under UAE Federal Decree-Law No. 45 of 2021 (PDPL)."
-date: 2026-05-28
-lastmod: 2026-05-28
+date: 2026-05-27
+lastmod: 2026-05-27
 ---
 
-**Last updated:** 2026-05-28
-**Effective:** 2026-05-28
+**Last updated:** 2026-05-27
+**Effective:** 2026-05-27
 
 ## 1. Who We Are
 

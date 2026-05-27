@@ -1,12 +1,12 @@
 ---
 title: "Refund & Exchange Policy"
 description: "MUSE Trendy Toy's policy on returns, exchanges, and defective items for B2B distribution and custom-gifting orders."
-date: 2026-05-28
-lastmod: 2026-05-28
+date: 2026-05-27
+lastmod: 2026-05-27
 ---
 
-**Last updated:** 2026-05-28
-**Effective:** 2026-05-28
+**Last updated:** 2026-05-27
+**Effective:** 2026-05-27
 
 ## 1. Summary
 
