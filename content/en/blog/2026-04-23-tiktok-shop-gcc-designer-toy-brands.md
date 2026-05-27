@@ -2,7 +2,7 @@
 title: "TikTok Shop GCC: What Designer Toy Brands Need to Know in 2026"
 slug: "tiktok-shop-gcc-designer-toy-brands-2026"
 date: 2026-04-23
-lastmod: 2026-04-23
+lastmod: 2026-05-27
 description: "77% of MENA consumers discover new products on TikTok. With TikTok Shop expected to launch in GCC in 2026, here's what designer toy brands need to prepare."
 categories: ["Social Media", "Market Analysis"]
 tags: ["TikTok Shop GCC", "social commerce Dubai", "designer toys marketing"]

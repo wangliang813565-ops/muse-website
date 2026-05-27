@@ -2,6 +2,7 @@
 title: "اكتشف وتسوق ألعاب الفن ذات الإصدار المحدود في دبي"
 slug: "discover-shop-limited-edition-art-toys-dubai"
 date: 2026-04-04
+lastmod: 2026-05-27
 description: "اكتشف أفضل الأماكن لشراء ألعاب الفن ذات الإصدار المحدود في دبي. من شخصيات المصممين الحصرية إلى المقتنيات النادرة، ابحث عن تحفتك الفنية التالية. تواصل معنا عبر الواتساب!"
 categories: ["Art Toys", "Collectibles", "Dubai Shopping Guide"]
 keywords: ["shop limited edition art toys Dubai", "designer toys Dubai", "art collectibles Dubai", "blind boxes Dubai", "rare art toys UAE"]

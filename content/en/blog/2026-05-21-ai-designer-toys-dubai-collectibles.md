@@ -2,7 +2,7 @@
 title: "AI Designer Toys Are Here — How Smart Collectibles Are Reshaping Dubai's Toy Scene"
 slug: "ai-designer-toys-dubai-collectibles"
 date: 2026-05-21
-lastmod: 2026-05-21
+lastmod: 2026-05-27
 description: "From voice-interactive plush to AI-powered blind boxes, smart designer toys are the newest frontier in GCC collecting. Here is why Dubai collectors are paying attention to the LULUYA AI series."
 categories: ["Designer Toys", "Technology"]
 tags: ["ai toys dubai", "smart collectibles gcc", "luluya ai", "interactive designer toys", "tech collectibles uae", "ai plush keychain"]

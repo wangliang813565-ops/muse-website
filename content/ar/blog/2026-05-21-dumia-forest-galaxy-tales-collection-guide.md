@@ -2,7 +2,7 @@
 title: "رحلة داخل مجموعة حكايات غابة دوميا المجرّية — سلسلة دمى المصمّمين الأكثر تنوّعاً في دبي"
 slug: "dumia-forest-galaxy-tales-collection-guide"
 date: 2026-05-21
-lastmod: 2026-05-21
+lastmod: 2026-05-27
 description: "عالمٌ واحد، ثلاث صيغ، وإمكانيات عرض لا متناهية. دليل شامل لمجموعة حكايات غابة دوميا المجرّية — من الصناديق المفاجئة إلى الدمى الفينيل المتحرّكة وصولاً إلى حقيبة الكروس بودي التي لا ينقطع الحديث عنها بين المقتنين."
 categories: ["Designer Toys", "Collector's Guide"]
 tags: ["dumia forest dubai", "galaxy tales blind box", "designer toy collection guide", "dumia plush gcc", "crossbody bag blind box", "movable vinyl plush uae"]

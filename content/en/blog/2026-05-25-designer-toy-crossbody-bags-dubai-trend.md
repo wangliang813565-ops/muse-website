@@ -2,7 +2,7 @@
 title: "Bag Charms Are Out — Designer Toy Crossbody Bags Are Dubai's New Accessory Obsession"
 slug: "designer-toy-crossbody-bags-dubai-trend"
 date: 2026-05-25
-lastmod: 2026-05-25
+lastmod: 2026-05-27
 description: "Designer toy crossbody bags are reshaping how GCC fashion lovers accessorize. From the Cloud Elf Xiangyun to Ula Weather, discover why these wearable collectibles are becoming Dubai's most unexpected style statement."
 categories: ["Designer Toys", "Trends"]
 tags: ["designer crossbody bag", "wearable collectibles dubai", "cloud elf xiangyun", "ula weather crossbody", "fashion collectibles gcc"]

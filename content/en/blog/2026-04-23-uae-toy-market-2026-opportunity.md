@@ -2,7 +2,7 @@
 title: "UAE Toy Market 2026: A $449 Million Opportunity for Collectors"
 slug: "uae-toy-market-2026-opportunity"
 date: 2026-04-23
-lastmod: 2026-04-23
+lastmod: 2026-05-27
 description: "The UAE toy market hit $449M in 2025, with the broader Middle East market projected to reach $9.2B by 2034. Here's what's driving the boom — and why designer toys lead the charge."
 categories: ["Market Analysis", "Designer Toys"]
 tags: ["UAE toy market", "Middle East collectibles", "kidult trend"]

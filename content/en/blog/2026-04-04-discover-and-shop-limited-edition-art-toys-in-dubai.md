@@ -2,6 +2,7 @@
 title: "Discover and Shop Limited Edition Art Toys in Dubai"
 slug: "discover-shop-limited-edition-art-toys-dubai"
 date: 2026-04-04
+lastmod: 2026-05-27
 description: "Uncover the best places to shop limited edition art toys in Dubai. From exclusive designer figures to rare collectibles, find your next masterpiece. Contact us via WhatsApp!"
 categories: ["Art Toys", "Collectibles", "Dubai Shopping Guide"]
 keywords: ["shop limited edition art toys Dubai", "designer toys Dubai", "art collectibles Dubai", "blind boxes Dubai", "rare art toys UAE"]

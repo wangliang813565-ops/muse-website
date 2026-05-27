@@ -2,7 +2,7 @@
 title: "Pop Mart vs MUSE: Why Dubai Collectors Are Choosing Local"
 slug: "pop-mart-vs-muse-dubai-collectors"
 date: 2026-04-23
-lastmod: 2026-04-23
+lastmod: 2026-05-27
 description: "Pop Mart is entering Saudi Arabia, but Dubai collectors are sticking with MUSE. Discover why local expertise, Dubai ready stock, and GCC-focused curation matter."
 categories: ["Designer Toys", "Market Analysis"]
 tags: ["Pop Mart Dubai", "designer toys UAE", "art toys GCC", "MUSE vs Pop Mart"]

@@ -2,7 +2,7 @@
 title: "Maytree Zodiac Blind Boxes: Why Dubai Collectors Are Obsessed"
 slug: "maytree-zodiac-blind-boxes-dubai-collectors"
 date: 2026-05-18
-lastmod: 2026-05-18
+lastmod: 2026-05-27
 description: "Maytree's Zodiac blind box series has arrived in Dubai — and collectors across the GCC are taking notice. Discover what makes these 13.5cm figures the most talked-about designer toy launch of the season."
 categories: ["Designer Toys", "Product Spotlight"]
 tags: ["maytree zodiac", "blind box dubai", "designer toys uae", "zodiac collectibles", "art toys gcc"]

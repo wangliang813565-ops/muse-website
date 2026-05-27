@@ -2,6 +2,7 @@
 title: "تسوق ألعاب المصممين في دبي عبر الإنترنت | مجموعة حصرية"
 slug: "shop-designer-toys-dubai-online-exclusive-collection"
 date: 2026-04-04
+lastmod: 2026-05-27
 description: "هل تبحث عن شراء ألعاب المصممين في دبي؟ اكتشف مجموعة MUSE الحصرية عبر الإنترنت من دمى BJD والصناديق العمياء والمجسمات الفنية. ارتقِ بمجموعتك أو اعثر على هدايا شركات فريدة. تسوق الآن!"
 categories: ["Designer Toys", "Collectibles", "Dubai Shopping Guide"]
 keywords: ["buy designer toys Dubai", "designer toys UAE", "art figures Dubai", "collectible toys Dubai", "blind box Dubai"]

@@ -2,7 +2,7 @@
 title: "ألعاب المصمّمين الذكية تصل إلى دبي — كيف تعيد المقتنيات الذكية تشكيل مشهد الألعاب في الإمارات"
 slug: "ai-designer-toys-dubai-collectibles"
 date: 2026-05-21
-lastmod: 2026-05-21
+lastmod: 2026-05-27
 description: "من الدمى التفاعلية صوتياً إلى الصناديق المفاجئة المدعومة بالذكاء الاصطناعي، تمثل ألعاب المصمّمين الذكية أحدث جبهة في عالم المقتنيات الخليجية. إليكم لماذا يولي جامعو المقتنيات في دبي اهتماماً خاصاً بسلسلة LULUYA AI."
 categories: ["Designer Toys", "Technology"]
 tags: ["ai toys dubai", "smart collectibles gcc", "luluya ai", "interactive designer toys", "tech collectibles uae", "ai plush keychain"]

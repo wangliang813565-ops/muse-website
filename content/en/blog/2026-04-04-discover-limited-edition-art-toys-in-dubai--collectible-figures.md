@@ -2,6 +2,7 @@
 title: "Discover Limited Edition Art Toys in Dubai | Collectible Figures"
 slug: "discover-limited-edition-art-toys-dubai"
 date: 2026-04-04
+lastmod: 2026-05-27
 description: "Explore the vibrant world of limited edition art toys in Dubai! Find unique collectible figures and designer toys. Contact MUSE for exclusive pieces and corporate gifts. WhatsApp us today!"
 categories: ["Designer Toys", "Art Collectibles", "Dubai Shopping", "Corporate Gifts"]
 keywords: ["limited edition art toys Dubai", "designer toys Dubai", "collectible figures UAE", "art toys UAE", "MUSE Dubai", "premium corporate gifts Dubai"]

@@ -2,7 +2,7 @@
 title: "Inside the Dumia Forest Galaxy Tales Collection — Dubai's Most Versatile Designer Toy Series"
 slug: "dumia-forest-galaxy-tales-collection-guide"
 date: 2026-05-21
-lastmod: 2026-05-21
+lastmod: 2026-05-27
 description: "One IP, three formats, endless display possibilities. A complete guide to the Dumia Forest Galaxy Tales collection — from blind boxes to movable vinyl plush to the crossbody bag that collectors cannot stop talking about."
 categories: ["Designer Toys", "Collector's Guide"]
 tags: ["dumia forest dubai", "galaxy tales blind box", "designer toy collection guide", "dumia plush gcc", "crossbody bag blind box", "movable vinyl plush uae"]

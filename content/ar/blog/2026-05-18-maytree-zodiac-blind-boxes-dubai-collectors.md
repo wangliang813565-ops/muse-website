@@ -2,7 +2,7 @@
 title: "علب Maytree المفاجئة للأبراج: لماذا أصبح هواة الجمع في دبي مهووسين بها"
 slug: "maytree-zodiac-blind-boxes-dubai-collectors"
 date: 2026-05-18
-lastmod: 2026-05-18
+lastmod: 2026-05-27
 description: "وصلت سلسلة علب الأبراج المفاجئة من Maytree إلى دبي — وهواة الجمع في جميع أنحاء دول الخليج بدأوا ينتبهون. اكتشف ما الذي يجعل هذه المجسمات البالغ طولها 13.5 سم أكثر إصدارات الألعاب الفنية تداولاً هذا الموسم."
 categories: ["Designer Toys", "Product Spotlight"]
 tags: ["maytree zodiac", "blind box dubai", "designer toys uae", "zodiac collectibles", "art toys gcc"]
