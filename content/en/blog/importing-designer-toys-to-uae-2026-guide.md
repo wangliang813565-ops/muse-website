@@ -1,6 +1,9 @@
 ---
 title: "Importing Designer Toys to the UAE — The Real Process & Numbers Behind GCC Distribution (2026 Guide)"
 description: "An 8-step buyer's guide to importing designer toys, blind boxes, and collectibles into the UAE in 2026 — covering MOQ, lead times, HS codes, UAE customs duty, ESMA conformity, VAT, and the Dubai-warehouse model that beats overseas freight by 25-30 days."
+slug: "importing-designer-toys-to-uae-2026-guide"
+aliases:
+  - /blog/importing-designer-toys-to-the-uae-the-real-process-numbers-behind-gcc-distribution-2026-guide/
 date: 2026-05-27
 lastmod: 2026-05-27
 categories: ["industry-guides"]
