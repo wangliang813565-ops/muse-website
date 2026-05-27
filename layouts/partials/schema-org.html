@@ -73,12 +73,9 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "{{ .Site.Params.brand }}",
+  "alternateName": ["MUSE", "MUSE Designer Toys"],
   "url": "{{ .Site.BaseURL }}",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "{{ .Site.BaseURL }}blog/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
+  "inLanguage": ["en", "ar"]
 }
 </script>
 {{ end }}
@@ -154,6 +151,37 @@
       "name": "{{ $p.Title }}"
     }
     {{ end }}
+  ]
+}
+</script>
+{{ end }}
+
+
+{{/* BreadcrumbList Schema — all non-home pages (Phase 3-T0a SEO standard) */}}
+{{ if not .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    }{{ range $i, $page := .Ancestors.Reverse }}{{ if ne $page.RelPermalink "/" }}{{ if and (ne $page.Lang "en") (eq $page.RelPermalink (printf "/%s/" $page.Lang)) }}{{ else }},
+    {
+      "@type": "ListItem",
+      "position": {{ add $i 2 }},
+      "name": "{{ $page.Title }}",
+      "item": "{{ $page.Permalink }}"
+    }{{ end }}{{ end }}{{ end }}{{ if not .IsSection }},
+    {
+      "@type": "ListItem",
+      "position": {{ add (len .Ancestors) 1 }},
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }{{ end }}
   ]
 }
 </script>
