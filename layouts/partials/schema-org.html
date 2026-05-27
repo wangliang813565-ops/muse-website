@@ -116,8 +116,15 @@
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "author": {
-    "@type": "Organization",
-    "name": "{{ .Site.Params.brand }}"
+    "@type": "Person",
+    "name": "Leon Wang",
+    "jobTitle": "Founder & CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "{{ .Site.Params.brand }}",
+      "url": "{{ .Site.BaseURL }}"
+    },
+    "sameAs": ["https://instagram.com/musetrendytoy"]
   },
   "publisher": {
     "@type": "Organization",
@@ -207,6 +214,68 @@
       "name": "{{ .Title }}",
       "item": "{{ .Permalink }}"
     }{{ end }}
+  ]
+}
+</script>
+{{ end }}
+
+
+{{/* C5 Person Schema — for /about/ page (founder profile, AI E-E-A-T signal) */}}
+{{ if eq .RelPermalink "/about/" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Leon Wang",
+  "alternateName": ["王亮", "Wang Liang"],
+  "jobTitle": "Founder & CEO",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "{{ .Site.Params.brand }}",
+    "legalName": "{{ .Site.Params.company }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "nationality": "China",
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Dubai, UAE"
+  },
+  "knowsAbout": [
+    "designer toys distribution",
+    "GCC retail market",
+    "China designer toy supply chain",
+    "Saker Falcon IP development",
+    "Middle East corporate gifting",
+    "MENA cross-border e-commerce",
+    "AI-driven business operations"
+  ],
+  "sameAs": [
+    "https://instagram.com/musetrendytoy"
+  ],
+  "email": "leon@evplus.ae",
+  "telephone": "+971 55 567 1672"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Zhao Xin",
+  "alternateName": ["Gloria", "赵欣"],
+  "jobTitle": "Co-Founder & Strategic Partner",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "{{ .Site.Params.brand }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "UCSI University"
+  },
+  "knowsAbout": [
+    "cross-border business operations",
+    "academic research",
+    "MUSE business strategy"
   ]
 }
 </script>
