@@ -4,7 +4,7 @@ Allow: /
 # Content-Signal directive (IETF draft draft-romm-aipref-contentsignals)
 # Declares operator intent for AI usage — currently honored by Cloudflare AI bot management
 # and several research crawlers. Forward-compatible with emerging standard.
-Content-Signal: search=yes, ai-train=yes, ai-personalization=no, ai-retrieval=yes
+Content-Signal: search=yes, ai-train=yes, ai-personalization=yes, ai-retrieval=yes
 
 # ── AI Crawlers — GEO optimization ──
 # Based on GEO paper (KDD 2024), gtm-engineer-skills, ai.robots.txt registry,

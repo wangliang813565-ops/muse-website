@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else if hasPrefix .Title "MUSE" }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="canonical" href="{{ .Permalink }}">
   {{/* GEO: article time signals for AI freshness ranking */}}
@@ -21,6 +21,15 @@
   <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
   {{/* W3: OG image fallback */}}
   {{ with .Params.image }}<meta property="og:image" content="{{ . }}">{{ else }}<meta property="og:image" content="{{ "images/brand/muse-logo.png" | absURL }}">{{ end }}
+  {{/* QW2: og:locale + locale:alternate (audit suggestion #2) */}}
+  <meta property="og:locale" content="{{ if eq .Lang "ar" }}ar_AE{{ else }}en_US{{ end }}">
+  {{ range .Translations }}<meta property="og:locale:alternate" content="{{ if eq .Lang "ar" }}ar_AE{{ else }}en_US{{ end }}">
+  {{ end }}
+  {{/* QW2: og:image dimensions + alt + twitter:card=summary_large_image */}}
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="twitter:card" content="summary_large_image">
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
   {{ partial "schema-org.html" . }}

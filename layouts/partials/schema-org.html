@@ -4,6 +4,7 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "{{ .Site.Params.brand }}",
+  "alternateName": ["MUSE", "MUSE Designer Toys", "musetrendytoy"],
   "legalName": "{{ .Site.Params.company }}",
   "url": "{{ .Site.BaseURL }}",
   "email": "{{ .Site.Params.email }}",
@@ -27,6 +28,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "{{ .Site.Params.brand }}",
+  "alternateName": ["MUSE", "MUSE Designer Toys"],
   "legalName": "{{ .Site.Params.company }}",
   "url": "{{ .Site.BaseURL }}",
   "telephone": "{{ .Site.Params.phone }}",
@@ -34,6 +36,7 @@
   "description": "{{ .Site.Params.description }}",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Dubai, UAE",
     "addressLocality": "Dubai",
     "addressRegion": "Dubai",
     "addressCountry": "AE"
@@ -128,6 +131,30 @@
       "name": "{{ .Site.Params.brand }}"
     }
   }
+}
+</script>
+{{ end }}
+
+
+{{/* C4: ItemList Schema — /products/ section listing (GEO commercial page boost, audit C4) */}}
+{{ if and (eq .Section "products") .IsSection }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Designer Toys & Collectibles by {{ .Site.Params.brand }}",
+  "description": "Curated catalog of designer toys, blind boxes, vinyl figures, and collectibles distributed across the GCC from Dubai.",
+  "numberOfItems": {{ len .Pages }},
+  "itemListElement": [
+    {{ range $i, $p := .Pages }}{{ if $i }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add $i 1 }},
+      "url": "{{ $p.Permalink }}",
+      "name": "{{ $p.Title }}"
+    }
+    {{ end }}
+  ]
 }
 </script>
 {{ end }}

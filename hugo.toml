@@ -1,5 +1,5 @@
 baseURL = 'https://toys.aimuse.ae/'
-title = 'MUSE — Designer Toys & Corporate Gifts in Dubai'
+title = 'MUSE Trendy Toy — Designer Toys & Corporate Gifts in Dubai'
 languageCode = 'en'
 defaultContentLanguage = 'en'
 enableRobotsTXT = true
@@ -7,7 +7,7 @@ enableEmoji = false
 
 [params]
   description = 'Premium designer toys, collectibles, and corporate gifts in Dubai. Serving UAE, GCC, and MENA businesses.'
-  brand = 'MUSE'
+  brand = 'MUSE Trendy Toy'
   company = 'MUSE Information Services L.L.C-FZ'
   email = 'musetrendytoy@gmail.com'
   phone = '+971 55 567 1672'
