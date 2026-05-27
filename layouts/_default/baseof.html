@@ -521,6 +521,11 @@
       <a href="https://instagram.com/musetrendytoy">Instagram</a> &middot;
       <a href="mailto:{{ .Site.Params.email }}">Email</a>
     </p>
+    <p style="font-size:.78rem;margin-top:.5rem;">
+      <a href="{{ "privacy/" | relLangURL }}">{{ if eq .Lang "ar" }}سياسة الخصوصية{{ else }}Privacy{{ end }}</a> &middot;
+      <a href="{{ "terms/" | relLangURL }}">{{ if eq .Lang "ar" }}شروط الخدمة{{ else }}Terms{{ end }}</a> &middot;
+      <a href="{{ "refund-policy/" | relLangURL }}">{{ if eq .Lang "ar" }}الاسترجاع{{ else }}Refund Policy{{ end }}</a>
+    </p>
   </footer>
 </body>
 </html>
