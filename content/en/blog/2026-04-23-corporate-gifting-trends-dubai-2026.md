@@ -91,7 +91,7 @@ A limited-edition art collectible wrapped in custom Ramadan-themed packaging tur
 
 A second wave of gifting that signals sustained appreciation. Matching or complementary designer toy sets create a sense of continuity and build anticipation for what comes next. Companies that gift at both Eid occasions demonstrate that their appreciation is consistent, not performative.
 
-### UAE National Day (December 2)
+### [UAE National Day](https://www.uaenationalday.ae) (December 2)
 
 Patriotism and pride define this occasion. Custom-designed collectibles themed around national identity — in the UAE's red, green, white, and black — show cultural awareness and respect that generic branded merchandise cannot match. National Day gifting is particularly important for companies working with government entities, semi-government organizations, and Emirati-owned enterprises.
 

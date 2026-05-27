@@ -1,5 +1,5 @@
 ---
-title: "Pop Mart vs MUSE: Why Dubai Collectors Are Choosing Local"
+title: "[Pop Mart](https://www.popmart.com) vs MUSE: Why Dubai Collectors Are Choosing Local"
 slug: "pop-mart-vs-muse-dubai-collectors"
 date: 2026-04-23
 lastmod: 2026-05-27
@@ -86,7 +86,7 @@ Not every release resonates with every market. A colourway that sells out in Tok
 MUSE takes a fundamentally different approach. Our team hand-selects collections that align with the aesthetic preferences and cultural sensibilities of GCC collectors. This is not a passive process of simply listing whatever is available — it is an active, editorial-driven selection process that reflects deep knowledge of both the global designer toy landscape and the specific tastes of the Middle Eastern market. That curation process considers:
 
 - **Colour and finish preferences**: GCC collectors tend to favour bold, luxurious colourways — golds, deep jewel tones, metallic finishes — that align with the region's broader affinity for premium aesthetics.
-- **Cultural relevance**: We consider how designs resonate with local celebrations, holidays, and gifting traditions. Collections timed around Eid, Ramadan, UAE National Day, and other regional occasions are a core part of our calendar.
+- **Cultural relevance**: We consider how designs resonate with local celebrations, holidays, and gifting traditions. Collections timed around Eid, Ramadan, [UAE National Day](https://www.uaenationalday.ae), and other regional occasions are a core part of our calendar.
 - **Scale and exclusivity**: Middle Eastern collectors often gravitate toward larger-scale display pieces and limited runs. MUSE prioritises access to these higher-tier products.
 - **Brand partnerships**: We actively seek collaborations with artists and brands whose work speaks to the GCC market, bringing exclusive or hard-to-find pieces to our Dubai warehouse.
 
