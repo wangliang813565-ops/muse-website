@@ -21,8 +21,10 @@
   <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
   {{/* W3: OG image fallback */}}
   {{ with .Params.image }}<meta property="og:image" content="{{ . }}">{{ else }}<meta property="og:image" content="{{ "images/brand/muse-logo.png" | absURL }}">{{ end }}
-  {{/* QW2: og:locale + locale:alternate (audit suggestion #2) */}}
-  <meta property="og:locale" content="{{ if eq .Lang "ar" }}ar_AE{{ else }}en_US{{ end }}">
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+  {{/* QW2 override Hugo defaults: og:locale en_US not en, twitter:card summary_large_image not summary, og:image:width/height/alt */}}
+<meta property="og:locale" content="{{ if eq .Lang "ar" }}ar_AE{{ else }}en_US{{ end }}">
   {{ range .Translations }}<meta property="og:locale:alternate" content="{{ if eq .Lang "ar" }}ar_AE{{ else }}en_US{{ end }}">
   {{ end }}
   {{/* QW2: og:image dimensions + alt + twitter:card=summary_large_image */}}
@@ -30,8 +32,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="twitter:card" content="summary_large_image">
-  {{ template "_internal/opengraph.html" . }}
-  {{ template "_internal/twitter_cards.html" . }}
+
   {{ partial "schema-org.html" . }}
   <style>
     :root {
