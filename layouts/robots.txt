@@ -1,9 +1,15 @@
 User-agent: *
 Allow: /
 
+# Content-Signal directive (IETF draft draft-romm-aipref-contentsignals)
+# Declares operator intent for AI usage — currently honored by Cloudflare AI bot management
+# and several research crawlers. Forward-compatible with emerging standard.
+Content-Signal: search=yes, ai-train=yes, ai-personalization=no, ai-retrieval=yes
+
 # ── AI Crawlers — GEO optimization ──
-# Based on GEO paper (KDD 2024), gtm-engineer-skills, and ai.robots.txt registry
-# Last updated: 2026-04-23
+# Based on GEO paper (KDD 2024), gtm-engineer-skills, ai.robots.txt registry,
+# and evplus.ae GEO playbook v3
+# Last updated: 2026-05-27
 
 # OpenAI / ChatGPT
 User-agent: GPTBot
