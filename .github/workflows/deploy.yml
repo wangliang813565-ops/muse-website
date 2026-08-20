@@ -68,7 +68,7 @@ jobs:
           KEY="d935af2161e6d47a33c5e7d056cdc59f"
           HOST="toys.aimuse.ae"
           # Pull sitemap URLs (max 10K per IndexNow request, we send up to 100 critical URLs)
-          URLS=$(curl -s "https://$HOST/en/sitemap.xml" | grep -oE '<loc>[^<]+' | sed 's|<loc>||' | head -100 | jq -R . | jq -c -s .)
+          URLS=$(curl -s "https://$HOST/en/sitemap.xml" | grep -oE '<loc>[^<]+' | sed 's|<loc>||' | head -100 | jq -R . | jq -c -s .) || true
           if [ -z "$URLS" ] || [ "$URLS" = "[]" ]; then
             URLS='["https://toys.aimuse.ae/"]'
           fi
