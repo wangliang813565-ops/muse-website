@@ -1,0 +1,28 @@
+{{ define "main" }}
+<style>
+  .buying-guide { max-width: 850px; font-size: 1rem; overflow-wrap: anywhere; }
+  .buying-guide .guide-summary { font-size: 1.15rem; border-inline-start: 3px solid var(--sand); padding-inline-start: 1.1rem; margin-block: 1.5rem 2rem; }
+  .buying-guide .guide-language { display: flex; gap: 1rem; flex-wrap: wrap; margin-block-end: 1.5rem; }
+  .buying-guide .guide-language a { padding: .65rem .25rem; }
+  .buying-guide a { color: var(--taupe); text-decoration: underline; text-underline-offset: .2em; }
+  .buying-guide a:focus-visible { outline: 3px solid var(--taupe); outline-offset: 4px; }
+  .buying-guide .guide-contact { background: var(--cream-dark); border: 1px solid var(--sand); padding: 1.5rem; margin-block-start: 2rem; border-radius: 4px; }
+  .buying-guide .guide-contact .cta { background: var(--taupe); color: var(--white); text-decoration: none; letter-spacing: normal; text-transform: none; min-height: 44px; }
+</style>
+<article class="content buying-guide">
+  <nav class="guide-language" aria-label="{{ if eq .Lang "ar" }}لغة الدليل{{ else }}Guide language{{ end }}">
+    {{ range .Translations }}<a href="{{ .RelPermalink }}" lang="{{ .Lang }}" hreflang="{{ .Lang }}">{{ .Language.LanguageName }}</a>{{ end }}
+  </nav>
+  <h1>{{ .Title }}</h1>
+  <p class="guide-summary">{{ .Params.summary }}</p>
+  {{ .Content }}
+  <section aria-labelledby="guide-faq-title">
+    <h2 id="guide-faq-title">{{ if eq .Lang "ar" }}أسئلة قبل بدء المشروع{{ else }}Questions before you start{{ end }}</h2>
+    {{ range .Params.faq }}<h3>{{ .q }}</h3><p>{{ .a }}</p>{{ end }}
+  </section>
+  <div class="guide-contact">
+    <p>{{ if eq .Lang "ar" }}أرسل المناسبة والمستلمين والكمية وموعد التسليم ومتطلبات العلامة إلى MUSE.{{ else }}Send MUSE your occasion, recipients, quantity, delivery date and branding needs.{{ end }}</p>
+    <a class="cta" href="https://wa.me/{{ .Site.Params.whatsapp }}?text={{ .Params.cta_message | urlquery }}">{{ .Params.cta_label }}</a>
+  </div>
+</article>
+{{ end }}

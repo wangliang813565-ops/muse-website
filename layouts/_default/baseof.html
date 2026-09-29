@@ -502,7 +502,11 @@
       <a href="{{ "products/" | relLangURL }}">Products</a>
       <a href="{{ "blog/" | relLangURL }}">Blog</a>
       <a href="{{ "about/" | relLangURL }}">About</a>
-      <a href="{{ "locations/" | relLangURL }}">Locations</a>
+      {{ with .Site.GetPage "/locations" }}
+        <a href="{{ .RelPermalink }}">Locations</a>
+      {{ else }}
+        <a href="{{ "locations/" | relURL }}" lang="en">Locations (English)</a>
+      {{ end }}
       {{ if eq .Lang "en" }}
         <a href="{{ .Site.BaseURL }}ar/">العربية</a>
       {{ else }}

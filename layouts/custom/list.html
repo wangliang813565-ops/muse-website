@@ -261,6 +261,11 @@
 </div>
 
 <!-- CTA with Phantom Banner -->
+<section class="content" aria-labelledby="gift-route-guide">
+  <h2 id="gift-route-guide">{{ if eq .Lang "ar" }}أي مسار يناسب هديتك؟{{ else }}Which gift route fits your project?{{ end }}</h2>
+  <p>{{ if eq .Lang "ar" }}قارن المنتجات الموجودة والتغليف بعلامتك ومشاريع الشخصيات الأصلية حسب المستلمين والموعد ومتطلبات التصميم.{{ else }}Compare existing products, branded presentation and original character projects by recipient, deadline and design needs.{{ end }}</p>
+  <a href="{{ "guides/corporate-gift-sourcing-dubai/" | relLangURL }}" style="color:var(--taupe);text-decoration:underline;display:inline-block;padding:.75rem 0;">{{ if eq .Lang "ar" }}اقرأ دليل اختيار هدايا الشركات{{ else }}Read the corporate gift buying guide{{ end }}</a>
+</section>
 <div style="position:relative; width:100%; min-height:400px; overflow:hidden; margin-top:2rem;">
   <img src="{{ "images/hala/phantom-banner.png" | relURL }}" alt="" style="width:100%; height:100%; object-fit:cover; object-position:left center; position:absolute; top:0; left:0;" loading="lazy">
   <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:linear-gradient(to right, rgba(10,10,10,0.2) 0%, rgba(10,10,10,0.6) 45%, rgba(10,10,10,0.85) 100%); display:flex; align-items:center; justify-content:flex-end; padding:0 8%;">
