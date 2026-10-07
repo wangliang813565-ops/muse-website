@@ -189,8 +189,8 @@
   <div class="hero-overlay">
     <div class="hero-text">
       <h1>{{ .Params.hero_title | default "Designer Toys for the Gulf Market" }}</h1>
-      <p>{{ .Params.hero_subtitle | default "Curated collectibles, blind boxes, and corporate gifts — shipped from our Dubai warehouse in 2-5 days across the GCC." }}</p>
-      <a href="https://wa.me/971555671672" class="cta">Get in Touch</a>
+      <p>{{ .Params.hero_subtitle | default "Designer toys, collectibles and corporate gifts, chosen around the recipient and occasion." }}</p>
+      <a href="https://wa.me/971555671672" class="cta">{{ .Params.hero_cta_text }}</a>
     </div>
   </div>
 </div>
@@ -198,16 +198,16 @@
 <!-- Stats Bar -->
 <div class="stats-bar">
   <div class="stat-item">
-    <div class="stat-num">50+</div>
-    <div class="stat-label">SKUs in Stock</div>
+    <div class="stat-num">{{ if eq .Lang "ar" }}مقتنيات{{ else }}Collect{{ end }}</div>
+    <div class="stat-label">{{ if eq .Lang "ar" }}صناديق ومجسمات وتعليقات{{ else }}Boxes, figures and keychains{{ end }}</div>
   </div>
   <div class="stat-item">
     <div class="stat-num">6</div>
     <div class="stat-label">GCC Countries</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num">2–5</div>
-    <div class="stat-label">Day Delivery</div>
+    <div class="stat-num">{{ if eq .Lang "ar" }}هدايا{{ else }}Gift{{ end }}</div>
+    <div class="stat-label">{{ if eq .Lang "ar" }}للمستلم والمناسبة{{ else }}Recipient-led projects{{ end }}</div>
   </div>
   <div class="stat-item">
     <div class="stat-num">1</div>
@@ -221,18 +221,18 @@
 <div class="values">
   <div class="value-card">
     <span class="value-icon">&#9201;</span>
-    <h3>Dubai Ready Stock</h3>
-    <p>2-5 day delivery across UAE, Saudi, Qatar, Kuwait, Bahrain, and Oman. No 30-day wait from overseas.</p>
+    <h3>{{ if eq .Lang "ar" }}اختر طريقة الاستخدام{{ else }}Choose how it will be used{{ end }}</h3>
+    <p>{{ if eq .Lang "ar" }}قارن قطعة للعرض بتعليقة للحقيبة حسب الحجم والتثبيت والعناية.{{ else }}Compare a display piece with a bag accessory by size, attachment and care needs.{{ end }}</p>
   </div>
   <div class="value-card">
     <span class="value-icon">&#10022;</span>
-    <h3>Curated Selection</h3>
-    <p>50+ SKUs of blind boxes, vinyl figures, plush keychains, and art collectibles — hand-picked for GCC retail demand.</p>
+    <h3>{{ if eq .Lang "ar" }}حدّد الإصدار{{ else }}Find the exact format{{ end }}</h3>
+    <p>{{ if eq .Lang "ar" }}أكّد السلسلة والشخصية ومحتويات العبوة قبل الاختيار بين صندوق مفاجآت ومجسم وتعليقة قطيفة.{{ else }}Confirm the series, character and package contents before choosing a blind box, figure or plush keychain.{{ end }}</p>
   </div>
   <div class="value-card">
     <span class="value-icon">&#9734;</span>
-    <h3>Corporate & Event Gifts</h3>
-    <p>Custom branded merchandise for Ramadan, Eid, National Day, and corporate occasions. Flexible MOQ, direct sourcing.</p>
+    <h3>{{ if eq .Lang "ar" }}هدية تناسب المناسبة{{ else }}Match the business moment{{ end }}</h3>
+    <p>{{ if eq .Lang "ar" }}ابدأ بالمستلمين والمناسبة، ثم قارن المنتج والتغليف بعلامتك والتصميم الأصلي.{{ else }}Start with recipients and occasion, then compare existing products, branded packaging and original design.{{ end }}</p>
   </div>
 </div>
 
@@ -314,12 +314,17 @@
 <!-- About / CTA Banner -->
 <div class="about-banner">
   <h2>The GCC's Designer Toy Partner</h2>
-  <p>MUSE is the first professional designer toy distributor in the Gulf region. We source globally and deliver locally — helping retailers stock trending collectibles without the risk and delay of overseas imports.</p>
-  <p>Whether you need 10 pieces or 10,000, we handle sourcing, warehousing, and GCC-wide logistics from Dubai.</p>
+  <p>{{ if eq .Lang "ar" }}تجمع MUSE في دبي بين مقتنيات المصممين ومشاريع هدايا الشركات. أخبرنا بالجمهور والاستخدام والوجهة لنناقش المنتج وطريقة تقديمه.{{ else }}MUSE brings designer toys and corporate gift projects together in Dubai. Tell us the audience, intended use and destination to discuss the product and presentation.{{ end }}</p>
+  <p>{{ if eq .Lang "ar" }}نؤكّد المواصفات والكمية والتكلفة وجدول التسليم للمشروع المحدد.{{ else }}We confirm specifications, quantity, complete price and delivery schedule for the specific project.{{ end }}</p>
   <a href="https://wa.me/971555671672" class="cta">WhatsApp Us</a>
 </div>
 
-<!-- FAQ Section — GEO: +11% AI citation rate (SE Ranking 2025) -->
+<section class="content" aria-labelledby="buyer-guides-title">
+  <h2 id="buyer-guides-title">{{ if eq .Lang "ar" }}اختر حسب ما تحتاجه{{ else }}Choose for the way you will use it{{ end }}</h2>
+  <p>{{ if eq .Lang "ar" }}للهدية الشخصية، قارن شكل القطعة وخاماتها والعناية بها. ولمشروع شركة، حدّد المستلمين والتغليف وآلية اعتماد العينة.{{ else }}For a personal gift, compare format, materials and care. For a company project, define recipients, packaging and sample approval.{{ end }}</p>
+  <p><a href="{{ "guides/designer-toy-buying-guide-dubai/" | relLangURL }}">{{ if eq .Lang "ar" }}دليل اختيار المقتنيات{{ else }}Designer toy buying guide{{ end }}</a> · <a href="{{ "guides/corporate-gift-sourcing-dubai/" | relLangURL }}">{{ if eq .Lang "ar" }}دليل هدايا الشركات{{ else }}Corporate gift buying guide{{ end }}</a></p>
+</section>
+<!-- Buyer questions: visible answers and FAQ schema share frontmatter -->
 {{ with .Params.faq }}
 <section style="max-width: var(--content-width); margin: 0 auto; padding: 3rem 2rem;">
   <h2 class="section-title" style="margin-top: 0;">Frequently Asked Questions</h2>

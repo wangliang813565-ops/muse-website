@@ -30,6 +30,11 @@
   </div>
 </div>
 
+<section class="content" aria-labelledby="collection-choice-title">
+  <h2 id="collection-choice-title">{{ if eq .Lang "ar" }}للعرض أم للحمل أم لهدية؟{{ else }}Display, carry or give?{{ end }}</h2>
+  <p>{{ if eq .Lang "ar" }}قارن شكل المنتج وأبعاده وخاماته ومحتويات العبوة والعناية قبل اختيار الإصدار.{{ else }}Compare format, dimensions, materials, package contents and care before choosing the variant.{{ end }}</p>
+  <a href="{{ "guides/designer-toy-buying-guide-dubai/" | relLangURL }}">{{ if eq .Lang "ar" }}اقرأ دليل اختيار المقتنيات{{ else }}Read the designer toy buying guide{{ end }}</a>
+</section>
 <div class="product-grid" style="max-width:var(--max-width); margin:2rem auto; padding:0 1rem;">
   {{ range .Pages }}
   <a href="{{ .Permalink }}" class="product-card" style="text-decoration:none;">
