@@ -104,7 +104,7 @@ We may amend these Terms at any time by posting an updated version here and upda
 
 - MUSE Information Services L.L.C-FZ
 - Meydan Free Zone, Dubai, UAE
-- WhatsApp: +971 55 567 1672
+- WhatsApp: +971 52 568 2660
 - Email: leon@evplus.ae
 - Web: https://toys.aimuse.ae/
 

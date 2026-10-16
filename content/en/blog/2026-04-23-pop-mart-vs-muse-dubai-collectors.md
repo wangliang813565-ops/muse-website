@@ -96,7 +96,7 @@ This curated approach means you spend less time scrolling through endless irrele
 
 Customer service is where the gap between local and global becomes most visible. When you have a question about a product, need help with an order, want a recommendation, or need to resolve an issue, you should not have to navigate a chatbot maze, wait 48 hours for an email reply, or communicate across time zones and language barriers.
 
-MUSE offers dedicated customer support through **WhatsApp** — the communication platform preferred by over 85% of UAE residents for both personal and business communication (Meta Business Insights, UAE Market Report, 2025). In a market where digital-first communication is the norm, WhatsApp is not a secondary channel — it is the primary one. Message us at **+971 55 567 1672** and you will speak with a real person who:
+MUSE offers dedicated customer support through **WhatsApp** — the communication platform preferred by over 85% of UAE residents for both personal and business communication (Meta Business Insights, UAE Market Report, 2025). In a market where digital-first communication is the norm, WhatsApp is not a secondary channel — it is the primary one. Message us at **+971 52 568 2660** and you will speak with a real person who:
 
 - **Knows our inventory** in real time and can tell you exactly what is in stock
 - **Understands the collector community** and can make informed recommendations based on your preferences and collection goals
@@ -188,6 +188,6 @@ As the GCC's designer toy market continues to mature, the collectors who will be
 
 Browse our latest drops and discover why collectors across the UAE trust MUSE for their designer toy needs. Whether you are a seasoned collector hunting for a specific piece, a newcomer exploring the world of art toys, or a business looking for corporate gifting solutions, MUSE is here to help.
 
-Have a question or need a recommendation? Reach out to us on WhatsApp at **+971 55 567 1672** — we would love to help you find your next piece. Fast delivery, authentic products, and a team that genuinely understands the collector experience.
+Have a question or need a recommendation? Reach out to us on WhatsApp at **+971 52 568 2660** — we would love to help you find your next piece. Fast delivery, authentic products, and a team that genuinely understands the collector experience.
 
 **Shop MUSE today and experience the local difference.**

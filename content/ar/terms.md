@@ -27,7 +27,7 @@ lastmod: 2026-05-27
 - MUSE Information Services L.L.C-FZ
 - Meydan Free Zone, Dubai, UAE
 - البريد الإلكتروني: leon@evplus.ae
-- واتساب: +971 55 567 1672
+- واتساب: +971 52 568 2660
 
 ---
 

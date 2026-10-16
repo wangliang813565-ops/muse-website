@@ -32,4 +32,4 @@ categories: ["case-studies"]
 
 النسخة الإنجليزية الكاملة: [هنا](/case-studies/hmg-geekay-corporate-gifting-partnership/).
 
-التواصل: [+971 55 567 1672](https://wa.me/971555671672) · [leon@evplus.ae](mailto:leon@evplus.ae)
+التواصل: [+971 52 568 2660](https://wa.me/971525682660) · [leon@evplus.ae](mailto:leon@evplus.ae)

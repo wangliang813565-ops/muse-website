@@ -5,7 +5,7 @@ hero_image: "/images/hero-seaside-wide.jpg"
 hero_title: "Designer toys and gifts, chosen for the person."
 hero_subtitle: "Find a collectible to display or carry, or shape a company gift around the recipient, occasion and brand."
 hero_cta_text: "Discuss what you need"
-hero_cta_link: "https://wa.me/971555671672"
+hero_cta_link: "https://wa.me/971525682660"
 faq:
   - q: "Where should I start if I do not know which designer toy to buy?"
     a: "Tell us who it is for and whether they will display it, carry it on a bag or collect a series. Then compare the exact product format, dimensions, materials, package contents and care information."

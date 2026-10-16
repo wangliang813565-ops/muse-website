@@ -27,7 +27,7 @@ MUSE 在迪拜的对外官网 `toys.aimuse.ae`，承接潮玩（Designer Toys）
 
 - **静态站生成**：Hugo（`hugo.toml`，双语 contentDir `content/en` + `content/ar` RTL）
 - **部署**：GitHub Actions（`.github/workflows/deploy.yml`）→ 推测发布到 Pages / Vercel / Netlify（看 workflow 详情）
-- **域名 / 邮箱**：`toys.aimuse.ae` / `musetrendytoy@gmail.com` / WhatsApp `+971 55 567 1672`
+- **域名 / 邮箱**：`toys.aimuse.ae` / `musetrendytoy@gmail.com` / WhatsApp `+971 52 568 2660`
 - **关键 skill**：`agent-browser`（页面验证）/ `image-generation`（OG 图 + Hero 图）/ `lark-cli`（飞书同步素材）
 - **语言/扩展**：Markdown + Goldmark（unsafe HTML）+ Hugo templates；输出 HTML + RSS；taxonomy = categories / tags
 

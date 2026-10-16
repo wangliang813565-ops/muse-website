@@ -130,4 +130,4 @@ The world of limited edition art toys is a captivating intersection of creativit
 
 At MUSE, we invite you to explore this fascinating realm. Whether you are looking to expand your personal collection with a statement piece, discover the next big artist, or seek an unforgettable corporate gift that truly stands out, our curated selection of limited edition art toys in Dubai awaits.
 
-Ready to discover your next masterpiece? Explore the exquisite collection of limited edition art toys at MUSE today. For personalized recommendations, corporate gifting solutions, or any inquiries, connect with our expert team via WhatsApp at +971 55 567 1672. Elevate your collection, elevate your gifting.
+Ready to discover your next masterpiece? Explore the exquisite collection of limited edition art toys at MUSE today. For personalized recommendations, corporate gifting solutions, or any inquiries, connect with our expert team via WhatsApp at +971 52 568 2660. Elevate your collection, elevate your gifting.

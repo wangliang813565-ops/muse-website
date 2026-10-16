@@ -53,7 +53,7 @@ lastmod: 2026-05-27
 
 ## التواصل
 
-- **واتساب**: +971 55 567 1672
+- **واتساب**: +971 52 568 2660
 - **البريد الإلكتروني**: leon@evplus.ae
 - **الموقع**: [https://toys.aimuse.ae/](https://toys.aimuse.ae/)
 - **إنستغرام**: [@musetrendytoy](https://instagram.com/musetrendytoy)

@@ -150,4 +150,4 @@ Whether you are looking to start your first collection, expand an existing one, 
 
 **Contact MUSE today to discover our exclusive collection of limited edition art toys and collectible figures.**
 
-**WhatsApp us at +971 55 567 1672 to schedule a private viewing or discuss your bespoke corporate gifting needs.**
+**WhatsApp us at +971 52 568 2660 to schedule a private viewing or discuss your bespoke corporate gifting needs.**

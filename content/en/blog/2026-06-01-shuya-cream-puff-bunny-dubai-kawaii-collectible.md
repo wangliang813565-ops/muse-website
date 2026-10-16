@@ -63,4 +63,4 @@ That delivery speed changes the collecting dynamic. Instead of waiting a month f
 
 ---
 
-*Explore the full SHUYA Cream Puff Bunny collection and other designer toys at [MUSE Trendy Toy](https://musetrendytoy.com/). For inquiries, reach out on WhatsApp at +971 55 567 1672.*
+*Explore the full SHUYA Cream Puff Bunny collection and other designer toys at [MUSE Trendy Toy](https://musetrendytoy.com/). For inquiries, reach out on WhatsApp at +971 52 568 2660.*

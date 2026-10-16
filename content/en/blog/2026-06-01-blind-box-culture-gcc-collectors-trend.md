@@ -93,4 +93,4 @@ For MUSE, the mission is straightforward: keep the region's best blind box serie
 
 ---
 
-*Browse the full blind box collection at [MUSE Trendy Toy](https://musetrendytoy.com/). For stock inquiries and collector community connections, reach out on WhatsApp at +971 55 567 1672.*
+*Browse the full blind box collection at [MUSE Trendy Toy](https://musetrendytoy.com/). For stock inquiries and collector community connections, reach out on WhatsApp at +971 52 568 2660.*

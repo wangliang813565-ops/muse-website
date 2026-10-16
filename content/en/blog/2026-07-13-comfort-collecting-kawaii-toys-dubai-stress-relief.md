@@ -87,4 +87,4 @@ Comfort collectibles require none of these things. They are passive wellness inf
 
 This is not pseudoscience. Environmental psychology has long established that visual access to soft forms, warm colours, and non-threatening imagery reduces physiological stress markers. The comfort collecting trend is, in essence, a grassroots adoption of environmental design principles — arrived at intuitively by people who noticed that certain objects make their spaces feel calmer and their days slightly more bearable.
 
-MUSE stocks the full SHUYA Cream Puff Bunny range, Dreamy Utopia vinyl plush series, and other comfort-focused designer toys with ready delivery across Dubai, Abu Dhabi, Riyadh, Doha, and the wider GCC. Explore the [full collection](https://musetrendytoy.com/) or contact us on WhatsApp at +971 55 567 1672 for wholesale enquiries.
+MUSE stocks the full SHUYA Cream Puff Bunny range, Dreamy Utopia vinyl plush series, and other comfort-focused designer toys with ready delivery across Dubai, Abu Dhabi, Riyadh, Doha, and the wider GCC. Explore the [full collection](https://musetrendytoy.com/) or contact us on WhatsApp at +971 52 568 2660 for wholesale enquiries.

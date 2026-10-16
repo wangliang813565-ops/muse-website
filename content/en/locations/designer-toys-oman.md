@@ -48,7 +48,7 @@ Oman's toy market is growing steadily, driven by a young population and increasi
 ## How to Order from Oman
 
 1. **Browse our collection** at [MUSE Products](/products/)
-2. **Contact us via WhatsApp** at [+971 55 567 1672](https://wa.me/971555671672) for pricing
+2. **Contact us via WhatsApp** at [+971 52 568 2660](https://wa.me/971525682660) for pricing
 3. **Confirm your order** — we'll send a quote with shipping to your Oman address
 4. **Receive in 2-5 days** — express courier delivery with tracking
 
@@ -58,4 +58,4 @@ For bulk orders and corporate gifts, contact us for a custom quote.
 
 MUSE Information Services L.L.C-FZ is the GCC's first professional designer toy distributor, headquartered in Dubai, UAE. We deliver across all 6 GCC countries — UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman.
 
-[WhatsApp us](https://wa.me/971555671672) | [Browse products](/products/) | [About MUSE](/about/)
+[WhatsApp us](https://wa.me/971525682660) | [Browse products](/products/) | [About MUSE](/about/)

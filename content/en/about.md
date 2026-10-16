@@ -15,7 +15,7 @@ faq:
   - q: "Where is MUSE registered?"
     a: "MUSE Information Services L.L.C-FZ is a UAE Free Zone Company registered in Meydan Free Zone, Dubai. UAE Trade License active, VAT-registered (TRN 100481956700003), and ADiP (Abu Dhabi IP) infrastructure for patent and trademark protection of Hala IP."
   - q: "Can I visit MUSE in Dubai?"
-    a: "Yes. Our warehouse and showroom are in Dubai. Contact us via WhatsApp +971 55 567 1672 or email leon@evplus.ae to schedule a visit. We host B2B retail buyers, corporate gifting clients, and IP collaboration partners."
+    a: "Yes. Our warehouse and showroom are in Dubai. Contact us via WhatsApp +971 52 568 2660 or email leon@evplus.ae to schedule a visit. We host B2B retail buyers, corporate gifting clients, and IP collaboration partners."
 ---
 
 ## Who We Are
@@ -95,7 +95,7 @@ Via Leon's Aboflah Greater-China commercial agency rights and government cultura
 
 ## Contact
 
-- **WhatsApp:** +971 55 567 1672
+- **WhatsApp:** +971 52 568 2660
 - **Email:** leon@evplus.ae
 - **Web:** [https://toys.aimuse.ae/](https://toys.aimuse.ae/)
 - **Instagram:** [@musetrendytoy](https://instagram.com/musetrendytoy)

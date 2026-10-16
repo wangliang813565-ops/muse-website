@@ -11,4 +11,4 @@ Below are anonymised but verifiable case studies of GCC distribution, IP licensi
 
 These are not theoretical — each project has a named partner (where disclosure is permitted), defined deliverables, and measurable outcomes. We share these so prospective B2B retailers, mall operators, and corporate gifting buyers can verify our operating capability before committing to a project.
 
-For project enquiries: [+971 55 567 1672](https://wa.me/971555671672) · [leon@evplus.ae](mailto:leon@evplus.ae)
+For project enquiries: [+971 52 568 2660](https://wa.me/971525682660) · [leon@evplus.ae](mailto:leon@evplus.ae)

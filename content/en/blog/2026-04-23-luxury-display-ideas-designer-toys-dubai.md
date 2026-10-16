@@ -167,7 +167,7 @@ Dubai's unique position as a global hub for luxury living, design innovation, an
 
 Whether you are a seasoned collector with hundreds of figures or someone who has just purchased your first piece, the display ideas in this guide offer a starting point that you can adapt and personalize. The most successful displays are those that reflect the personality of the collector while respecting the artistry of each figure. In a city that celebrates individuality and craftsmanship in equal measure, your designer toy collection is not just a hobby — it is a reflection of who you are and what you choose to live with every day.
 
-Ready to find the perfect piece to display? [Chat with us on WhatsApp](https://wa.me/) and we will help you discover your next favorite figure.
+Ready to find the perfect piece to display? [Chat with us on WhatsApp](https://wa.me/971525682660) and we will help you discover your next favorite figure.
 
 ---
 

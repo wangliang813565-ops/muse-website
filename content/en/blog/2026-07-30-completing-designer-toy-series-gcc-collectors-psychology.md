@@ -67,4 +67,4 @@ The beauty of designer toy collecting in the Gulf right now is that the scene is
 
 ---
 
-*Build your designer toy collection with MUSE Trendy Toy. Dubai ready stock on Maytree, Dumia, and premium blind box series. GCC delivery in 2-5 days. [Browse the collection](https://musetrendytoy.com/) or reach us on WhatsApp at +971 55 567 1672.*
+*Build your designer toy collection with MUSE Trendy Toy. Dubai ready stock on Maytree, Dumia, and premium blind box series. GCC delivery in 2-5 days. [Browse the collection](https://musetrendytoy.com/) or reach us on WhatsApp at +971 52 568 2660.*

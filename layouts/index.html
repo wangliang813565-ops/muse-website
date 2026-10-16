@@ -190,7 +190,7 @@
     <div class="hero-text">
       <h1>{{ .Params.hero_title | default "Designer Toys for the Gulf Market" }}</h1>
       <p>{{ .Params.hero_subtitle | default "Designer toys, collectibles and corporate gifts, chosen around the recipient and occasion." }}</p>
-      <a href="https://wa.me/971555671672" class="cta">{{ .Params.hero_cta_text }}</a>
+      <a href="https://wa.me/{{ .Site.Params.whatsapp }}" class="cta">{{ .Params.hero_cta_text }}</a>
     </div>
   </div>
 </div>
@@ -316,7 +316,7 @@
   <h2>The GCC's Designer Toy Partner</h2>
   <p>{{ if eq .Lang "ar" }}تجمع MUSE في دبي بين مقتنيات المصممين ومشاريع هدايا الشركات. أخبرنا بالجمهور والاستخدام والوجهة لنناقش المنتج وطريقة تقديمه.{{ else }}MUSE brings designer toys and corporate gift projects together in Dubai. Tell us the audience, intended use and destination to discuss the product and presentation.{{ end }}</p>
   <p>{{ if eq .Lang "ar" }}نؤكّد المواصفات والكمية والتكلفة وجدول التسليم للمشروع المحدد.{{ else }}We confirm specifications, quantity, complete price and delivery schedule for the specific project.{{ end }}</p>
-  <a href="https://wa.me/971555671672" class="cta">WhatsApp Us</a>
+  <a href="https://wa.me/{{ .Site.Params.whatsapp }}" class="cta">WhatsApp Us</a>
 </div>
 
 <section class="content" aria-labelledby="buyer-guides-title">

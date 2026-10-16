@@ -85,7 +85,7 @@
     {{ with .Params.price }}<div class="price">AED {{ . }}</div>{{ end }}
     {{ with .Params.price_note }}<div class="price-note">{{ . }}</div>{{ end }}
     <div class="description">{{ .Content }}</div>
-    <a href="https://wa.me/971555671672?text=Hi%2C%20I'm%20interested%20in%20{{ .Title | urlquery }}" class="product-cta">Enquire on WhatsApp</a>
+    <a href="https://wa.me/{{ .Site.Params.whatsapp }}?text=Hi%2C%20I'm%20interested%20in%20{{ .Title | urlquery }}" class="product-cta">Enquire on WhatsApp</a>
   </div>
 </div>
 

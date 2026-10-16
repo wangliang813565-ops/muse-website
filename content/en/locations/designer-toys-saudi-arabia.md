@@ -60,7 +60,7 @@ MUSE delivers designer toys and collectibles to all major Saudi cities:
 Ordering from MUSE is simple:
 
 1. **Browse our collection** at [MUSE Products](/products/)
-2. **Contact us via WhatsApp** at [+971 55 567 1672](https://wa.me/971555671672) for pricing and availability
+2. **Contact us via WhatsApp** at [+971 52 568 2660](https://wa.me/971525682660) for pricing and availability
 3. **Confirm your order** — we'll send a quote with shipping to your Saudi address
 4. **Receive in 2-5 days** — express courier delivery with tracking
 
@@ -70,4 +70,4 @@ For bulk orders and corporate gifts, contact us for a custom quote. Volume disco
 
 MUSE Information Services L.L.C-FZ is the GCC's first professional designer toy distributor, headquartered in Dubai, UAE. We bridge the gap between global designer toy brands and the Gulf market — offering Dubai ready stock, fast delivery, and a curated selection tailored to regional demand.
 
-[WhatsApp us](https://wa.me/971555671672) | [Browse products](/products/) | [About MUSE](/about/)
+[WhatsApp us](https://wa.me/971525682660) | [Browse products](/products/) | [About MUSE](/about/)

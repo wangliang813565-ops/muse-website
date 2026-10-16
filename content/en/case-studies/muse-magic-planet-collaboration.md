@@ -104,7 +104,7 @@ If you're a GCC entertainment operator, mall, or theme park looking to introduce
 2. **ESMA conformity + UAE customs + VAT** through our cleared brokerage
 3. **Dubai warehouse + 6-country GCC last-mile** in 2–5 days
 
-To discuss your project: [+971 55 567 1672](https://wa.me/971555671672) · [leon@evplus.ae](mailto:leon@evplus.ae)
+To discuss your project: [+971 52 568 2660](https://wa.me/971525682660) · [leon@evplus.ae](mailto:leon@evplus.ae)
 
 ---
 

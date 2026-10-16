@@ -19,7 +19,7 @@ When this policy says "we," "us," or "MUSE," it refers to the company above.
 This policy describes how we collect, use, store, share, and protect Personal Data that we obtain through:
 
 - This Site (toys.aimuse.ae) and any subdomain
-- WhatsApp business inquiries to +971 55 567 1672
+- WhatsApp business inquiries to +971 52 568 2660
 - Email correspondence with our business address
 - Order forms, custom-gift briefs, and IP-collaboration proposals you submit to us
 - Trade-show meetings, in-person visits to our Dubai warehouse, and B2B retailer onboarding
@@ -133,7 +133,7 @@ We post material changes here and update the "Last updated" date above. For mate
 - MUSE Information Services L.L.C-FZ
 - Meydan Free Zone, Dubai, UAE
 - Email: leon@evplus.ae
-- WhatsApp: +971 55 567 1672
+- WhatsApp: +971 52 568 2660
 
 For complaints, you may contact the **UAE Data Office** under the PDPL framework.
 

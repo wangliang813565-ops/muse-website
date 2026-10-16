@@ -48,7 +48,7 @@ MUSE مبنية بدقة على استيعاب هذا التعقيد في 8 خط
 
 ## التواصل
 
-- واتساب: [+971 55 567 1672](https://wa.me/971555671672)
+- واتساب: [+971 52 568 2660](https://wa.me/971525682660)
 - البريد الإلكتروني: [leon@evplus.ae](mailto:leon@evplus.ae)
 - الويب: [https://toys.aimuse.ae/](https://toys.aimuse.ae/)
 

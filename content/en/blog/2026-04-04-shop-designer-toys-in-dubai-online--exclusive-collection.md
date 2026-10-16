@@ -17,7 +17,7 @@ faq:
   - q: "Does MUSE offer delivery across the UAE for designer toys?"
     a: "Yes, MUSE provides reliable and efficient delivery services for all our designer toys across Dubai and the wider UAE, ensuring your coveted collectibles arrive safely and promptly at your doorstep. We aim for a smooth and secure delivery process."
   - q: "How can I contact MUSE for inquiries about designer toys in Dubai?"
-    a: "You can easily reach MUSE for any inquiries about our designer toys or corporate gifting options by WhatsApp at +971 55 567 1672 or email us at musetrendytoy@gmail.com. Our team is ready to assist you."
+    a: "You can easily reach MUSE for any inquiries about our designer toys or corporate gifting options by WhatsApp at +971 52 568 2660 or email us at musetrendytoy@gmail.com. Our team is ready to assist you."
 ---
 
 # Shop Designer Toys in Dubai Online | Exclusive Collection
@@ -156,4 +156,4 @@ Explore our exclusive online collection today and discover the perfect piece tha
 
 **Ready to find your next masterpiece or the perfect corporate gift?**
 
-**Contact us via WhatsApp for personalized assistance: +971 55 567 1672**
+**Contact us via WhatsApp for personalized assistance: +971 52 568 2660**

@@ -62,4 +62,4 @@ For Dubai's growing designer toy community, each new Dumia release is a marker o
 
 ---
 
-*Explore the Dumia Whispers of Heartbeat series and other Maytree blind box collections at [MUSE Trendy Toy](https://musetrendytoy.com/). Dubai ready stock, GCC delivery in 2-5 days. For inquiries, reach us on WhatsApp at +971 55 567 1672.*
+*Explore the Dumia Whispers of Heartbeat series and other Maytree blind box collections at [MUSE Trendy Toy](https://musetrendytoy.com/). Dubai ready stock, GCC delivery in 2-5 days. For inquiries, reach us on WhatsApp at +971 52 568 2660.*

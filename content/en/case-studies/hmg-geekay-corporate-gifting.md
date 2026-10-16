@@ -99,7 +99,7 @@ If you're a GCC retail-distribution group, gift-shop chain, or hotel-souvenir op
 3. **ESMA + UAE customs + VAT** through our cleared brokerage
 4. **Dubai warehouse + GCC distribution** in 2–5 day delivery
 
-To discuss seasonal merchandise planning: [+971 55 567 1672](https://wa.me/971555671672) · [leon@evplus.ae](mailto:leon@evplus.ae)
+To discuss seasonal merchandise planning: [+971 52 568 2660](https://wa.me/971525682660) · [leon@evplus.ae](mailto:leon@evplus.ae)
 
 ---
 

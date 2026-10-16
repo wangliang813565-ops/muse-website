@@ -147,4 +147,4 @@ More importantly, premium gifts influence behavior. In the same PPAI study, 83 p
 
 The companies winning Dubai's corporate gifting game in 2026 are the ones willing to move beyond the expected. Designer toys are not just gifts — they are brand assets that work long after the moment of exchange. They sit on desks, start conversations, appear in social media posts, and build the kind of emotional connection that standard corporate merchandise simply cannot achieve.
 
-If you are ready to elevate your corporate gifting strategy, MUSE is here to help. Message us on WhatsApp at **+971 55 567 1672** to schedule a consultation and explore what custom designer toy gift sets can do for your brand.
+If you are ready to elevate your corporate gifting strategy, MUSE is here to help. Message us on WhatsApp at **+971 52 568 2660** to schedule a consultation and explore what custom designer toy gift sets can do for your brand.

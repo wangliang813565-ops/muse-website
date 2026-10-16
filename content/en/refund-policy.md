@@ -85,7 +85,7 @@ In the rare case of a quality dispute that doesn't fit the categories above:
 To request an exchange, file a complaint, or ask questions:
 
 - Email: **leon@evplus.ae**
-- WhatsApp: **+971 55 567 1672**
+- WhatsApp: **+971 52 568 2660**
 - Reference your invoice/order number in all correspondence
 
 We respond within **2 business days**.

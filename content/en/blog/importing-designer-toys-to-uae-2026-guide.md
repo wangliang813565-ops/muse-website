@@ -201,7 +201,7 @@ If you're running a GCC retail or corporate-gifting business and want to skip th
 
 **Contact MUSE Trendy Toy:**
 
-- WhatsApp: [+971 55 567 1672](https://wa.me/971555671672)
+- WhatsApp: [+971 52 568 2660](https://wa.me/971525682660)
 - Email: [leon@evplus.ae](mailto:leon@evplus.ae)
 - Web: [https://toys.aimuse.ae/](https://toys.aimuse.ae/)
 

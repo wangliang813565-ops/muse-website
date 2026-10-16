@@ -87,4 +87,4 @@ The bag charm trend is not a passing fad. It represents something structural: a 
 
 MUSE stocks the full range of Daimio Animal Carnival pendants, Cloud Elf keychains, and other designer plush accessories with ready delivery across Dubai, Abu Dhabi, Riyadh, Doha, and the wider GCC. Dubai-based inventory means 2 to 5 day delivery — no weeks of waiting for international shipping.
 
-Browse the [full accessories collection](https://musetrendytoy.com/) or reach out via WhatsApp at +971 55 567 1672 for wholesale enquiries.
+Browse the [full accessories collection](https://musetrendytoy.com/) or reach out via WhatsApp at +971 52 568 2660 for wholesale enquiries.

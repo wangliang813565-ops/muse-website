@@ -12,7 +12,7 @@ faq:
   - q: "What are the best corporate gifts for Ramadan in Dubai?"
     a: "Designer toy blind boxes, branded gift sets, and premium collectibles are the top trending corporate gifts for Ramadan 2026 in Dubai. According to a 2025 Promotional Products Association International study, 83% of recipients remember the brand on a promotional gift — making designer toys with custom packaging a high-recall choice. Custom packaging with Arabic calligraphy adds a luxury touch."
   - q: "Where can I order bulk corporate gifts in Dubai?"
-    a: "MUSE, based in Dubai, offers bulk corporate gift solutions including custom branded designer toys, blind box collections, and premium gift boxes with 2-5 day delivery across GCC. Contact via WhatsApp at +971 55 567 1672 for a quote."
+    a: "MUSE, based in Dubai, offers bulk corporate gift solutions including custom branded designer toys, blind box collections, and premium gift boxes with 2-5 day delivery across GCC. Contact via WhatsApp at +971 52 568 2660 for a quote."
   - q: "How much do corporate gifts cost in Dubai?"
     a: "Corporate gift pricing in Dubai ranges from AED 50-500 per unit depending on customization level. Bulk orders of 100+ units typically receive 15-30% discounts. Designer toy blind boxes start at AED 35-80 per unit for standard series, with custom branded versions at AED 100-250 per unit."
   - q: "What makes a good corporate gift in the GCC?"
@@ -180,4 +180,4 @@ Corporate gifting in the GCC is about more than just giving something away. It's
 
 The shift toward designer toys and art collectibles isn't a fad — it's a reflection of how the GCC market values craftsmanship, exclusivity, and visual impact. Whether you're planning for Ramadan, Eid, National Day, or year-round client appreciation, the right corporate gift makes your brand unforgettable.
 
-Ready to upgrade your corporate gifting? Browse our [product collection](/products/) or [WhatsApp us](https://wa.me/971555671672) for a custom quote.
+Ready to upgrade your corporate gifting? Browse our [product collection](/products/) or [WhatsApp us](https://wa.me/971525682660) for a custom quote.
