@@ -2,7 +2,7 @@
 title: "Corporate gifts in Dubai: ready-made, branded or custom?"
 description: "Choose a corporate gift sourcing route by recipient, deadline and branding needs. Compare product use, materials, packaging, sample approval and original character projects with MUSE."
 date: 2026-09-29
-lastmod: 2026-10-08
+lastmod: 2026-10-18
 layout: buying-guide
 translationKey: corporate-gift-sourcing-dubai
 summary: "Start with the recipient and required delivery date. Choose an existing product when the object already fits; add branding when presentation matters; develop an original character when the object itself must tell your brand story."
@@ -23,7 +23,25 @@ faq:
     a: "Keep the artwork version, agreed specification and physical sample acceptance together. Include the package, included items and handover requirements. Quantity, price and schedule belong in the confirmed proposal for the chosen design."
   - q: "What makes a gift practical after the handover?"
     a: "Consider how the recipient will carry, display or use it. Check opening, weight and dimensions, attachments, cleaning and storage for the selected product. Include care information and any recipient-specific restrictions in the brief."
+  - q: "What should an original falcon mascot brief and sample approval cover?"
+    a: "Approve the character identity, front/side/back views, dimensions, material and finish, then inspect a physical sample with its packaging. Record the sample version, permitted differences and named approver. Agree tooling and prototype stages separately; a render does not approve production."
 ---
+
+## Brief an original falcon mascot and approve its physical sample
+
+For an original falcon character, describe the personality, intended audience and use first: a display figure, plush accessory and wearable mascot need different construction. Separate the features that define the character from details that may change during manufacturing.
+
+| Decision | What to record and check |
+|---|---|
+| Character identity | Front, side and back views; eye and beak shape; wing position; colours; expression; permitted brand marks and usage rights. |
+| Physical specification | Overall dimensions, material, weight target, finish, seams or joints, and how the object stands, hangs or is held. |
+| Prototype review | Compare the physical proportions and colours with the approved design. Check the base or attachment, fragile details and surfaces touched by the recipient. Record differences with photos and measurements. |
+| Packaging review | Test the actual object inside the proposed insert and box. Check wing and beak clearance, protection, opening sequence, included card and care information. |
+| Production approval | Identify the sample and artwork versions, agreed tolerances, unresolved points, approver and date. Any material, colour, construction or packaging substitution needs a recorded decision before it is used. |
+
+Agree design, prototype, tooling and pre-production approvals as separate stages. Some samples need tooling; settle that stage and its cost before authorising it. Approving a digital render does not approve the physical product, and approving one sample does not replace production quality checks. For children's products, agree the applicable safety and testing requirements for the intended market and age group.
+
+Send MUSE your character references, intended format and recipient setting through [IP collaboration](/collaboration/). [Hala](/hala/) shows our falcon character direction; an original brand commission needs its own agreed brief.
 
 ## Compare the three routes
 
