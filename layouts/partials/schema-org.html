@@ -142,29 +142,13 @@
 </script>
 {{ end }}
 
-{{/* Product Schema — for product pages */}}
+{{/* Enquiry catalogue: retain item facts without an unsupported sales offer. */}}
 {{ if and (eq .Section "products") .IsPage }}
+{{ $item := dict "@type" "Thing" "@id" (printf "%s#item" .Permalink) "name" .Title "description" .Description "url" .Permalink }}
+{{ with .Params.image }}{{ $item = merge $item (dict "image" (. | absURL)) }}{{ end }}
+{{ $page := dict "@context" "https://schema.org" "@type" "WebPage" "@id" (printf "%s#webpage" .Permalink) "url" .Permalink "name" .Title "description" .Description "inLanguage" .Lang "about" $item "publisher" (dict "@id" (printf "%s#organization" .Site.BaseURL)) }}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "{{ .Title }}",
-  "description": "{{ .Description }}",
-  {{ with .Params.image }}"image": "{{ . }}",{{ end }}
-  "brand": {
-    "@type": "Brand",
-    "name": "{{ .Site.Params.brand }}"
-  },
-  "offers": {
-    "@type": "Offer",
-    "availability": "https://schema.org/InStock",
-    "itemCondition": "https://schema.org/NewCondition",
-    "seller": {
-      "@type": "Organization",
-      "name": "{{ .Site.Params.brand }}"
-    }
-  }
-}
+{{ $page | jsonify | safeJS }}
 </script>
 {{ end }}
 
